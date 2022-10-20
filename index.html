@@ -1,0 +1,2824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <img src="image/js_logo.svg" class="logo">
+      <div id="presentation-area">
+        <section class="presentation">
+          <!--<img src="image/js_logo.svg" class="logo">-->
+
+          <!--slide 1-->
+          <div class="slide show">
+            <div class="heading">
+              Présentation sur Javascript
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Algorithme Javascript <br/>
+              </h3>
+              <p class="sub-title">
+                Concepts de base et avancés
+              </p>
+              <p>Mon portefeuille</p>
+              <p><a href="https://kilian-schropp.surge.sh/">https://kilian-schropp.surge.sh/</a></p>
+            </div>
+          </div>
+
+          <!--slide 2-->
+          <div class="slide">
+            <img src="image/html-5-logo.svg" class="html-css-logo">
+            <div class="heading">
+              HTML, CSS et JS
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                HTML
+              </h3>
+              <p class="sub-title">
+                La structure de la page
+              </p>
+              <p>Définition du contenu</p>
+            </div>
+          </div>
+
+          <!--slide 3-->
+          <div class="slide">
+            <img src="image/css-3-logo.svg" class="html-css-logo">
+            <div class="heading">
+              HTML, CSS et JS
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                CSS
+              </h3>
+              <p class="sub-title">
+                Spécifie le design
+              </p>
+              <ul>
+                <li>L’organisation de la structure (layout)</li>
+                <li>Le style des éléments (couleurs, décorations, tailles...)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--slide 4-->
+          <div class="slide">
+            <img src="image/js_logo.svg" class="html-css-logo">
+            <div class="heading">
+              HTML, CSS et JS
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                JS (Javascript)
+              </h3>
+              <p class="sub-title">
+                La logique dans la page
+              </p>
+              <ul>
+                <li>Algorithme côté client</li>
+                <li>Interaction avec l’utilisateur (boutons, formulaires)</li>
+                <li>Interaction avec le navigateur</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--slide 5-->
+          <div class="slide">
+            <img src="image/history.svg" class="html-css-logo" style="left: 75%; top:37%">
+            <img src="image/oracle-logo.svg" class="html-css-logo" style="left: 3%; top:75%">
+            <div class="heading">
+              Historique
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Langage de script créé en 1995 (Netscape)
+              </h3>
+              <p class="sub-title">
+                Marque déposé de Sun Microsystems, Oracle maintenant
+              </p>
+            </div>
+          </div>
+
+          <!--slide 6-->
+          <div class="slide">
+            <img src="image/java-logo.svg" class="html-css-logo" style="left: 75%; top:45%">
+            <img src="image/python-logo.svg" class="html-css-logo" style="left: 2%; top:45%">
+            <div class="heading">
+              Historique
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Inspiré par Java et Python
+              </h3>
+              <ul>
+                <li>Style Java</li>
+                <li>Facilité d'écriture de code du python</li>
+              </ul>
+              
+            </div>
+          </div>
+
+          <!--slide 7-->
+          <div class="slide">
+            <div class="heading">
+              Historique
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Exécution côté client
+              </h3>
+              <div class="content">
+                <p class="sub-title">
+                  Ajoute du dynamisme dans les pages
+                </p>
+                <ul>
+                  <li>Interactions utilisateurs, animations</li>
+                  <li>Aide à la navigation</li>
+                  <li>Traitement côté client</li>
+                  <li>Requêtes asynchrones</li>
+                </ul>
+              </div>
+              <iframe id="running" src="image/runningMan.svg" width="30%" height="50%"  frameborder="0" style="right: 0%; bottom:0%; position:absolute"></iframe>
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Historique
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Utilisation
+              </h3>
+              <p class="sub-title">
+                <img src="image/popularity.svg" style="width: 49%;">
+              </p>
+            </div>
+          </div>
+
+          <!--slide 2-->
+          <div class="slide">
+            <div class="heading">
+              Organisation des systèmes informatiques - CPU
+            </div>
+            <div class="content">
+              <p><b>Central Processing Unit (CPU) est le cerveau de l'ordinateur</b></p>
+              <img src="image/cpu-archi.svg" style="width:55%">
+              <img src="image/cpu.svg" class="html-css-logo" style="left: 70%; top:45%">
+            </div>
+          </div>
+
+          <!--slide 3-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Bits
+            </div>
+            <div class="content">
+              <p>L'unité de base de la mémoire est appelée bit. Il peut être soit 0 soit 1</p>
+              <iframe id="lightswitch" src="lightswitch.html" width="100%" height="80%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 4-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Bits
+            </div>
+            <div class="content">
+              <p>Pourquoi binaire, pourquoi pas Quaternaire?</p>
+              <br>
+              <div class="flex-container">
+                <div>
+                  <img src="image/binary.svg" style="width:100%">
+                </div>
+                <div>
+                  <img src="image/alternative.svg" style="width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 5-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Rappel du système décimal
+            </div>
+            <div class="content">
+              <iframe
+                src="https://codepen.io/MarkBoots/full/vYyoMQg"
+                width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+            </div>
+          </div>
+
+          <!--slide 6-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Byte
+            </div>
+            <div class="content">
+              <iframe
+                src="https://codepen.io/evanmags/full/ZNWMJW"
+                width="100%" height="95%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+              <a href="https://www.advanced-ict.info/mathematics/abacus.html">binary abbacus</a>
+            </div>
+          </div>
+
+          <!--slide 7-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Mémoire
+            </div>
+            <div class="content">
+              <p>Toutes les données d'un ordinateur sont stockées dans des séquences de 0 et de 1.</p>
+              <br>
+              <img src="image/lightswitches.svg" style="width:70%">
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Introduction à l'informatique - Adresse de la mémoire
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <img src="image/houseAdresse.svg" style="width:90%">
+                </div>
+                <div>
+                  <img src="image/adresse.svg" style="width:75%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 9-->
+          <div class="slide">
+            <div class="heading">
+              Algorithme - Pizza exemple
+            </div>
+            <div class="content">
+              <ol>
+                <li>Préchauffer le four à 500 degrés et y mettre la pierre.</li>
+                <li>Sortez la pâte de blé entier de TJ's.</li>
+                <li>Farinez-la et roulez-la</li>
+                <li>Puis brosser avec de l'huile d'olive et une solide poussière de farine de maïs.</li>
+                <li>Retirez la pierre</li>
+                <li>Retournez la croûte sur elle</li>
+                <li>Faire cuire pendant environ cinq minutes</li>
+                <li>Retirez-le</li>
+                <li>Percez les bulles</li>
+                <li>Mettez plus d'huile d'olive sur le dessus.</li>
+                <li>Puis les garnitures: Huile d'olive, tapenade d'olives, ail frais, champignons, oignons, basilic frais, de la mozzarella en tranches et une pile d'anchois.</li>
+                <li>Faites cuire pendant encore 10-15 minutes</li>
+                <li>Retirez-le avec votre palette à pizza et prenez-le en photo</li>
+                <li>Offrez une tranche à votre invité, en priant pour qu'il ait déjà mangé.</li>
+                <li>Consommez-le avec une bonne bouteille de vin rouge bon marché tout en gérant vos nombreuses émotions.</li>
+              </ol>
+              <img src="image/pizza.svg" class="html-css-logo" style="left: 80%; top:15%; width:10%">
+            </div>
+          </div>
+
+          <!--slide 10-->
+          <div class="slide">
+            <div class="heading">
+              Algorithme - The martingale strategy/Algorithme
+            </div>
+            <div class="content">
+              <ol>
+                <li>Commence avec 1€ de mise</li>
+                <li>Place ta mise sur le noir ou le rouge</li>
+                <li>Laissez tourner la roue</li>
+                <li>Si vous perdez, doublez la dernière mise et retournez à l'étape 2</li>
+                <li>Si vous gagnez, prenez votre dernière mise et l'argent gagné, recommencez au début de 1€ et retournez à l'étape 2</li>
+              </ol>
+              <iframe
+              src="https://codepen.io/ozboware/full/QWqEmgE"
+              width="100%" height="85%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+            </div>
+          </div>
+
+          <!--slide 9-->
+          <div class="slide">
+            <div class="heading">
+              Case Sensitivity
+            </div>
+            <div class="content">
+              <p><b>JavaScript</b> est un langage sensible à la casse. Cela signifie que les mots-clés du langage, les variables,
+                noms de fonctions et autres identifiants doivent toujours être tapés avec une <b>majuscule cohérente</b>.
+                lettres.
+              </p>
+              <img src="image/case-sensetiv.svg" style="width: 60%; padding-left: 10%;">
+            </div>
+          </div>
+
+          <!--slide 10-->
+          <div class="slide">
+            <div class="heading">
+              Comments
+            </div>
+            <div class="content">
+              <p>Les commentaires donnent des informations aux personnes qui lisent votre code. JavaScript prend en charge deux styles de commentaires. 
+                Tout texte entre un <b>//</b> et la fin d'une ligne est traité comme un commentaire et est ignoré par JavaScript. 
+                Tout texte entre les caractères <b>/*</b> et <b>*/</b> est également traité comme un commentaire.
+              </p>
+              <p class="sub-title">
+                Exemple:
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                <span style="color: #008000">// This is a single-line comment.</span>
+                <span style="color: #008000">/* This is also a comment */</span> 
+                <span style="color: #008000">// and here is another comment.</span>
+                <span style="color: #008000">/*</span>
+                <span style="color: #008000">* This is yet another comment.</span>
+                <span style="color: #008000">* It has multiple lines.</span>
+                <span style="color: #008000">*/</span>
+                </pre>
+              </div>
+
+            </div>
+          </div>
+
+          <!--slide 11-->
+          <div class="slide">
+            <div class="heading">
+              Literals
+            </div>
+            <div class="content">
+              <p>Un littéral est une valeur de données qui apparaît directement dans un programme. </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  12 <span style="color: #008000">// Le nombre douze</span>
+                  1.2 <span style="color: #008000">// Le nombre un virgule deux</span>
+                  <span style="color: #a31515">&quot;hello world&quot;</span> <span style="color: #008000">// Une chaîne de caractères</span>
+                  <span style="color: #a31515">&#39;Hi&#39;</span> <span style="color: #008000">// Une autre chaîne de caractères</span>
+                  <span style="color: #0000ff">true</span> <span style="color: #008000">// Une valeur booléenne</span>
+                  <span style="color: #0000ff">false</span> <span style="color: #008000">// L&#39;autre valeur booléenne</span>
+                  <span style="color: #0000ff">null</span> <span style="color: #008000">// Absence d&#39;objet</span>
+                </pre>
+              </div>
+              <br>
+              <p>Les détails complets sur les types de données apparaissent plus loin dans la présentation</p>
+            </div>
+          </div>
+
+          <!--slide 12-->
+          <div class="slide">
+            <div class="heading">
+              Variables
+            </div>
+            <div class="content">
+              <p>Une variable est simplement une zone de stockage.
+                 Vous placez des éléments dans vos zones de stockage (variables) 
+                 afin de pouvoir les utiliser et les manipuler dans vos programmes.
+              </p>
+              <img src="image/variable.svg" style="width: 82%; padding-left: 15%;">
+            </div>
+          </div>
+
+          <!--slide 13-->
+          <div class="slide">
+            <div class="heading">
+              Variables
+            </div>
+            <div class="content">
+              <p>Une variable est le nom d'une cellule de mémoire. 
+                  Elle est dite "variable" car la valeur contenue dans la cellule peut changer. 
+                  Chaque cellule de mémoire a une adresse.
+              </p>
+              <img src="image/boxInRam.svg" style="width: 90%; padding-left: 15%;">
+            </div>
+          </div>
+
+          <!--slide 14-->
+          <div class="slide">
+            <div class="heading">
+              Declaration
+            </div>
+            <div class="content">
+              <p>Avant d'utiliser une variable dans un programme JavaScript, vous devez la déclarer. Les variables sont déclarées avec le mot-clé <b>var</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> i;
+                  <span style="color: #0000ff">var</span> sum;
+                </pre>
+              </div>
+              <p>Vous pouvez également déclarer plusieurs variables avec le même mot-clé <b>var</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> i, sum;
+                </pre>
+              </div>
+              <p>Et vous pouvez combiner la déclaration de variable avec l'initialisation de variable. 
+                Les détails complets sur les types de données apparaissent plus loin dans la présentation</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> message = <span style="color: #a31515">&quot;hello&quot;</span>;
+                  <span style="color: #0000ff">var</span> i = 0, j = 0, k = 0;
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 15-->
+          <div class="slide">
+            <div class="heading">
+              Declaration - let
+            </div>
+            <div class="content">
+              <p>La manière la plus simple d'utiliser <b>let</b> est un simple remplacement à la place de <b>var</b></p>
+              <p>
+                Les variables définies avec let ne peuvent pas être redéclarées.
+                Vous ne pouvez pas redéclarer accidentellement une variable.
+                Avec let, vous ne pouvez pas faire ceci
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">let</span> x = <span style="color: #a31515">&quot;John Doe&quot;</span> ;
+                  <span style="color: #0000ff">let</span> x = 0 ; <span style="color: #008000">// Erreur de syntaxe : &#39;x&#39; a déjà été déclaré.</span></pre>
+              </div>
+              <p>
+                Avec var, vous pouvez :
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> x = <span style="color: #a31515">&quot;John Doe&quot;</span>;
+                  <span style="color: #0000ff">var</span> x = 0;</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 16-->
+          <div class="slide">
+            <div class="heading">
+              Declaration - Block scope and let
+            </div>
+            <div class="content">
+              <p>Cette scope restreint l'accès à la variable déclarée à l'intérieur d'un bloc spécifique par les personnes extérieures à ce bloc. 
+                Le mot-clé <b>let</b> facilite la mise en place d'une scope de bloc pour les variables
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                {
+                    <span style="color: #0000ff">let</span> x = 2 ;
+                }
+                <span style="color: #008000">// x ne peut PAS être utilisé ici</span>
+                {
+                    <span style="color: #0000ff">var</span> x = 2 ;
+                }
+                <span style="color: #008000">// x PEUT être utilisé ici</span></pre>
+              </div>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">let</span> x = 10 ;
+                  <span style="color: #008000">// Ici, x est 10</span>
+                  {
+                      <span style="color: #0000ff">let</span> x = 2 ;
+                      <span style="color: #008000">// Ici, x est 2</span>
+                  }
+                  <span style="color: #008000">// Ici, x est égal à 10 </span></pre>
+              </div>
+              <img src="image/corsshair.svg" class="html-css-logo" style="left: 40%; top: 40%; height: 40%; width:40%">
+              <img src="image/warning.svg" class="html-css-logo" style="left: 70%; top:63%; height:32%">
+            </div>
+          </div>
+
+          <!--slide 17-->
+          <div class="slide">
+            <div class="heading">
+              Declaration - const
+            </div>
+            <div class="content">
+              <p>Les constantes sont comme les variables, sauf que les affectations à ces dernières sont ignorées 
+                (la tentative de modifier une constante ne provoque pas d'erreur) et les tentatives de les redéclarer provoquent des erreurs
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">const</span> pi = 3.14 ; <span style="color: #008000">// Définit une constante et lui donne une valeur.</span>
+                  pi = 4 ; <span style="color: #008000">// Toute affectation future à cette constante est ignorée en silence.</span>
+                  <span style="color: #0000ff">const</span> pi = 4 ; <span style="color: #008000">// C&#39;est une erreur de redéclarer une constante.</span>
+                  <span style="color: #0000ff">var</span> pi = 4 ; <span style="color: #008000">// C&#39;est également une erreur.</span></pre>
+              </div>
+              <p>Le mot-clé const se comporte fondamentalement comme le mot-clé var</p>
+              <img src="image/constant.svg" class="html-css-logo" style="left: 32%; top: 60%; height: 40%; width:40%">
+            </div>
+          </div>
+
+          <!--slide 18-->
+          <div class="slide">
+            <div class="heading">
+              Statements
+            </div>
+            <div class="content">
+              <p>Les instructions (statements) sont des phrases ou des commandes JavaScript. 
+                Tout comme les phrases françaises sont terminées et séparées les unes des autres par des points, 
+                les instructions JavaScript sont terminées par des points-virgules. 
+                Les instructions sont exécutées pour que quelque chose se produise</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> hello = <span style="color: #a31515">&quot;Hello, world&quot;</span>;
+                  myfunc(42, <span style="color: #a31515">&quot;O&#39;Reilly&quot;</span>);
+                  <span style="color: #0000ff">var</span> a = 1;
+                  <span style="color: #0000ff">var</span> name = <span style="color: #a31515">&quot;Elphaba&quot;</span>;
+                  <span style="color: #0000ff">var</span> b = a / 25.0;
+                  <span style="color: #0000ff">if</span> (a == b) { console.log(a); }
+                </pre>
+              </div>
+              <br>
+              <p>Une instruction composée qui utilise des accolades pour marquer un bloc de code, 
+                tel qu'un test conditionnel ou une boucle, n'a pas besoin de point-virgule 
+                après l'accolade fermante.</p>
+            </div>
+          </div>
+
+          <!--slide 19-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Integers
+            </div>
+            <div class="content">
+              <p>Dans un programme JavaScript, un nombre entier en base 10 est écrit sous la forme d'une séquence de chiffres. Par exemple</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> zero = 0;
+                  <span style="color: #0000ff">var</span> three = 3;
+                  <span style="color: #0000ff">var</span> zehnmillionen = 10000000;
+                </pre>
+              </div>
+              <p>Outre les littéraux entiers en base 10, JavaScript reconnaît les valeurs hexadécimales (base 16).
+                 Un littéral hexadécimal commence par "0x" ou "0X", suivi d'une chaîne de chiffres hexadécimaux.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> number1 = 0xff; <span style="color: #008000">// 15*16 + 15 = 255 (base 10)</span>
+                   <span style="color: #0000ff">var</span> number2 = 0xCAFE911; <span style="color: #008000">//212855057</span>
+                </pre>
+              </div>
+              <p> Les nombres entiers octaux existent également en JavaScript (exemple : 0377). 
+                Certaines implémentations JavaScript prennent en charge les littéraux octaux, d'autres non. Vous ne devez donc jamais l'utiliser.
+             </p>
+            </div>
+          </div>
+
+          <!--slide 20-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Integers
+            </div>
+            <div class="content">
+              <p>Exercice : Ecrivez un programme en JavaScript pour échanger deux nombres
+              </p>
+              <img src="image/swapping.svg" style="width: 75%; padding-left: 15%;">
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008000">//Example:</span>
+                  <span style="color: #0000ff">var</span> a = 39, b = 25 
+                  <span style="color: #008000">//après échange</span>
+                  <span style="color: #008000">//a = 25, b = 39 </span>
+                  console.log(a);
+                  console.log(b);
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 21-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Integers
+            </div>
+            <div class="content">
+              <p>Console.log affiche un message sur la console web
+              </p>
+              <iframe
+                frameborder="0"
+                height="100%"  
+                src="https://onecompiler.com/embed/javascript" 
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 22-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Integers
+            </div>
+            <div class="content">
+              <p>Solution:
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008000">//exemple simple</span>
+                  <span style="color: #0000ff">var</span> a = 39;
+                  <span style="color: #0000ff">var</span> b = 25;
+                  <span style="color: #0000ff">var</span> third = a;
+                  a = b;  
+                  b = third;  
+                  console.log(<span style="color: #a31515">&quot;variable a=&quot;</span> +a+ <span style="color: #a31515">&quot; ,variable b=&quot;</span> +b);  
+
+                  <span style="color: #008000">//exemple plus complexe</span>
+                  a = 45;
+                  b = 105;
+                  a=a+b;  
+                  b=a-b;  
+                  a=a-b;  
+                  console.log(<span style="color: #a31515">&quot;variable a=&quot;</span> +a+ <span style="color: #a31515">&quot; ,variable b=&quot;</span> +b);   
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 23-->
+          <div class="slide">
+            <div class="heading">
+              Data Types basic - Floating-Point
+            </div>
+            <div class="content">
+              <p>Les types de données à virgule flottante peuvent avoir un point décimal ; ils utilisent la syntaxe traditionnelle des nombres réels.
+                 Une valeur réelle est représentée par la partie intégrale du nombre, suivie d'un point décimal et de la partie fractionnaire du nombre
+              </p>
+              <p>Les littéraux à virgule flottante peuvent également être représentés à l'aide de la notation exponentielle : un nombre réel suivi de 
+                la lettre e (ou E), suivi d'un signe plus ou moins facultatif, suivi d'un exposant entier.  
+                Cette notation représente le nombre réel multiplié par 10 à la puissance de l'exposant
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008000">//Notation simple</span>
+                  3.14
+                  2345.789
+                  .333333333333333333
+                  <span style="color: #008000">//Notation scientifique/exponentielle</span>
+                  6.02e23 <span style="color: #008000">// 6.02 × 1023</span>
+                  1.4738223E-32 <span style="color: #008000">// 1.4738223 × 10-32</span>
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 24-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>Les opérateurs arithmétiques sont des opérateurs que vous reconnaîtrez dans l'usage quotidien.
+              </p>
+              <img src="image/arithmetic.svg" class="html-css-logo" style="left: 70%; top:37%;height: 50%;">
+              <table class="tg">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Opérateur</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Explications</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">=<br></td>
+                    <td class="tg-0lax">var salary = 2800;</td>
+                    <td class="tg-0lax">Assignation/Affectation</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">+</td>
+                    <td class="tg-0lax">var salary = salary + 2800</td>
+                    <td class="tg-0lax">Addition/Concaténation</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">-</td>
+                    <td class="tg-0lax">var salary = salary - 2800</td>
+                    <td class="tg-0lax">Soustraction</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">*</td>
+                    <td class="tg-0lax">var salary = salary * 2800</td>
+                    <td class="tg-0lax">Multiplication</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">/</td>
+                    <td class="tg-0lax">var salary = salary / 2800<br></td>
+                    <td class="tg-0lax">Division<br></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">%</td>
+                    <td class="tg-0lax">var salary = salary % 1000</td>
+                    <td class="tg-0lax">Modulo, reste de la division entière</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!--slide 25-->
+          <div class="slide">
+            <img src="image/handRecieving.svg" class="html-css-logo" style="left: 1%; top: 74%;">
+            <img src="image/handGivingMoney.svg" class="html-css-logo" style="left: 70%; top: 74%;">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">
+                Exercice: Calcule le salaire mensuel si ton salaire brut en tant que développeur est de 32000€ par an 
+                (réaliste dans la région de Toulouse après la formation). 
+                Le salaire net est d'environ 75% du salaire annuel.
+              </p>
+            </div>
+          </div>
+
+          <!--slide 26-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>Calcule le salaire mensuel
+              </p>
+              <iframe
+                frameborder="0"
+                height="100%"  
+                src="https://onecompiler.com/embed/javascript/3ye5gsj68" 
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 27-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>
+                Exercice: Il est actuellement minuit. 
+                Quelle heure sera-t-il après 40 heures passées sur une horloge de 12 heures ? 
+                Utilisez l'opérateur modulo % pour calculer l'heure
+              </p>
+              <img src="image/mod.svg" class="html-css-logo" style="left: 40%; top: unset; height: 60%; width:60%">
+              <iframe id="clock" src="time.html" width="1000" height="1000"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 28-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>Calcule le temps
+              </p>
+              <iframe
+                frameborder="0"
+                height="100%"  
+                src="https://onecompiler.com/embed/javascript/3ye5qh62r"
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+          
+          <!--slide 29-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>Solution pour l'exo modulo:
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> hours = 40;
+                  <span style="color: #0000ff">var</span> clock = 12;
+                  <span style="color: #0000ff">var</span> time = 40%12;
+                  console.log(<span style="color: #a31515">&quot;it is &quot;</span>+time+<span style="color: #a31515">&quot; o&#39;clock&quot;</span>);
+                </pre>
+              </div>
+              <p>
+                Y a pas mieux que l'exercice sur l'horloge pour comprendre les modulos et les ensembles finis ordonnés
+              </p>
+            </div>
+          </div>
+
+          <!--slide 30-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Strings
+            </div>
+            <div class="content">
+              <p>Les Strings (chaînes de caractères) sont le type de JavaScript pour représenter du texte.</p>
+              <p>Pour inclure une string dans un programme JavaScript, il suffit de placer les caractères 
+                de la string entre une paire de guillemets simples ou doubles (' ou ")
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> str = <span style="color: #a31515">&quot;&quot;</span>; <span style="color: #008000">// La chaîne vide : elle ne contient aucun caractère</span>
+                  str = <span style="color: #a31515">&#39;testing&#39;</span>;
+                  str = <span style="color: #a31515">&quot;3.14&quot;</span>;
+                  str = <span style="color: #a31515">&#39;name=&quot;mon formulaire&quot;&#39;</span>;
+                  str = <span style="color: #a31515">&quot;π est le rapport entre la circonférence d&#39;un cercle et son diamètre&quot;</span>;
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 31-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Escape Sequences in String
+            </div>
+            <div class="content">
+              <p>Le caractère backslash (\) a une fonction particulière dans les strings JavaScript. 
+                Combiné avec le caractère qui le suit, il représente un caractère qui n'est pas autrement représentable dans le string.</p>
+                <div class="flex-container">
+                  <div>
+                    <table class="tg">
+                      <thead>
+                        <tr>
+                          <th class="tg-0pky"><span style="font-weight:bold">Sequence</span></th>
+                          <th class="tg-0pky"><span style="font-weight:bold">Caractère représenté</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="tg-0pky">\0</td>
+                          <td class="tg-0pky">Le caractère NUL (\u0000)</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\b</td>
+                          <td class="tg-0pky">Retour en arrière (\u0008)</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\t</td>
+                          <td class="tg-0pky">Horizontal tab (\u0009)</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\n</td>
+                          <td class="tg-0pky">Nouvelle ligne(\u000A)</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\v</td>
+                          <td class="tg-0pky">Onglet vertical(\u000B)</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\f</td>
+                          <td class="tg-0pky">Form feed (\u000C)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div>
+                    <table class="tg">
+                      <thead>
+                        <tr>
+                          <th class="tg-0pky"><span style="font-weight:bold">Sequence</span></th>
+                          <th class="tg-0pky"><span style="font-weight:bold">Caractère représenté</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="tg-0pky">\r</td>
+                          <td class="tg-0pky">Retour à la ligne (\u000D)</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\"</td>
+                          <td class="tg-0pky">Guillemets doubles (\u0022)</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\'</td>
+                          <td class="tg-0pky">Apostrophe ou Guillemets simples (\u0027</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\\</td>
+                          <td class="tg-0pky">Backslash (\u005C)</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\x XX</td>
+                          <td class="tg-0pky">Le caractère Latin-1 spécifié par les deux chiffres hexadécimaux XX</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\u XXXX</td>
+                          <td class="tg-0pky">Le caractère Unicode spécifié par les quatre chiffres hexadécimaux XXXX</td>
+                        </tr>
+                      </tbody>
+                      </table>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 32-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Strings
+            </div>
+            <div class="content">
+              <img src="image/heart.svg" class="html-css-logo" style="left: 70%; top: 73%;">
+              <img src="image/heart.svg" class="html-css-logo" style="left: 50%; top: 75%;">
+              <img src="image/heart.svg" class="html-css-logo" style="left: 10%; top: 74%;">
+              <p>
+                Exercice : Assignez la phrase de l'exercice à une variable (var text) et imprimez-la avec console.log(text);
+              </p>
+              <p>
+                Phrase: <span style="color:#a31515">"j'adore" tellement Perl que je n'arrive pas à y croire! Le meilleur langage de programmation au monde, je vous le jure ;)\</span>
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000">#Perl example:</span>
+                @P=split<span style="color: #a31515">//</span>,<span style="color: #a31515">&quot;.URRUU\c8R&quot;</span>;@d=split<span style="color: #a31515">//</span>,<span style="color: #a31515">&quot;\nrekcah xinU / lreP rehtona tsuJ&quot;</span>;<span style="color: #0000ff">sub </span>p{
+                  @p{<span style="color: #a31515">&quot;r$p&quot;</span>,<span style="color: #a31515">&quot;u$p&quot;</span>}=(P,P);pipe<span style="color: #a31515">&quot;r$p&quot;</span>,<span style="color: #a31515">&quot;u$p&quot;</span>;++$p;($q*=2)+=$f=!fork;map{$P=$P[$f^ord
+                  ($p{$_})&amp;6];$p{$_}=<span style="color: #a31515">/ ^$P/ix</span>?$P:close$_}keys%p}p;p;p;p;p;map{$p{$_}=~<span style="color: #a31515">/^[P.]/</span>&amp;&amp;
+                  close$_}%p;wait <span style="color: #0000ff">until</span>$?;map{<span style="color: #a31515">/^r/</span>&amp;&amp;<span style="color: #a31515">&lt;$_&gt;</span>}%p;$_=$d[$q];sleep rand(2)<span style="color: #0000ff">if</span><span style="color: #a31515">/\S/</span>;<span style="color: #0000ff">print</span>
+                </pre>
+              </div>
+              <p>
+                Perl a été conçu par Larry Wall qui a étudié la linguistique. MDR (la linguistique est l'étude scientifique du langage)
+              </p>
+            </div>
+          </div>
+
+          <!--slide 33-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Strings
+            </div>
+            <div class="content">
+              <p>Échapper la chaîne de caractères
+              </p>
+              <iframe
+                frameborder="0"
+                height="100%"  
+                src="https://onecompiler.com/embed/javascript/3ye65mapr"
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 34-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - String - Concatenation
+            </div>
+            <div class="content">
+              <p>L'une des fonctions intégrées de JavaScript est la possibilité de concaténer des chaînes de caractères. 
+                Si vous utilisez l'opérateur + avec des nombres, il les additionne. Mais si vous utilisez cet opérateur 
+                sur des chaînes de caractères, il les joint en ajoutant la seconde à la première</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> msg = <span style="color: #a31515">&quot;Hello, &quot;</span> + <span style="color: #a31515">&quot;world&quot;</span>; <span style="color: #008000">// Produces the string &quot;Hello, world&quot;</span>
+                  <span style="color: #0000ff">var</span> greeting = <span style="color: #a31515">&quot;Welcome to my blog,&quot;</span> + <span style="color: #a31515">&quot; &quot;</span> + name;
+                </pre>
+              </div>
+              <img src="image/chain.svg" class="html-css-logo" style="left: 20%; top: 55%; width: 60%; height:40%;">
+            </div>
+          </div>
+
+          <!--slide 35-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Booleans
+            </div>
+            <div class="content">
+              <p>Une valeur booléenne représente la vérité ou la fausseté, on ou off, oui ou non. Il n'y a que deux valeurs possibles de ce type.
+                 Les mots réservés <b>true</b> et <b>false</b> évaluent ces deux valeurs</p>
+              <iframe id="lightswitch2" src="lightswitch.html" width="100%" height="90%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 36-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Booleans
+            </div>
+            <div class="content">
+              <p>Les valeurs suivantes se convertissent en, et donc fonctionnent comme, false. Toutes les autres valeurs sont converties en, et fonctionnent comme, true</p>
+              <iframe
+                frameborder="0"
+                height="90%"  
+                src="https://onecompiler.com/embed/javascript/3yeeadfxe" 
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 37-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - null et undefined
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <p><b>null</b> est un mot-clé du langage qui est évalué à une valeur spéciale, 
+                      généralement utilisée pour indiquer <b>l'absence d'une valeur</b>
+                  </p>
+                  <p>JavaScript possède également une deuxième valeur qui indique l'absence de valeur. 
+                    La valeur <b>undefined</b> représente un type d'absence plus profond. 
+                  </p>  
+                </div>
+                <div style="width:55%;">
+                  <img src="image/nullUndefined.svg" style="width: 100%; height:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 38-->
+          <div class="slide">
+            <div class="heading">
+              Arrays
+            </div>
+            <div class="content">
+                <div class="flex-container">
+                  <div style="width: 78%;"> 
+                    <p>Un tableau (array) est une <b>collection ordonnée de valeurs</b>. Chaque valeur est appelée un élément, 
+                      et chaque élément a une position numérique dans le tableau, appelée son index. Les tableaux 
+                      JavaScript sont non typés : un élément de tableau peut être de <b>n'importe quel type</b>, et 
+                      différents éléments d'un même tableau peuvent être de types différents. 
+                      Les éléments d'un tableau peuvent même être des objets ou d'autres tableaux, ce qui permet 
+                      de créer des structures de données complexes, telles que des tableaux d'objets et des tableaux de tableaux.</p>
+                  </div>
+                  <div style="width:20%;">
+                    <img src="image/arrayIndex.svg" style="width: 100%;">
+                  </div>
+                </div>
+                <img src="image/arrayboxes.svg" class="html-css-logo" style="left: 10%; top: 58%; height:40%; width:40%">
+            </div>
+          </div>
+
+          <!--slide 39-->
+          <div class="slide">
+            <div class="heading">
+              Creating Arrays
+            </div>
+            <div class="content">
+              <p>La façon la plus simple de créer un tableau est d'utiliser un littéral de tableau,
+                 qui est simplement une liste d'éléments de tableau séparés par des virgules entre crochets
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> empty = []; <span style="color: #008000">// Un tableau sans éléments</span>
+                  <span style="color: #0000ff">var</span> primes = [2, 3, 5, 7, 11]; <span style="color: #008000">// Un tableau avec 5 éléments numériques</span>
+                  <span style="color: #0000ff">var</span> misc = [ 1.1, <span style="color: #0000ff">true</span>, <span style="color: #a31515">&quot;a&quot;</span>, ]; <span style="color: #008000">// 3 éléments de différents types + virgule de fin de ligne</span></pre>
+              </div>
+              <p>
+                Les valeurs d'un littéral de tableau ne doivent pas nécessairement être des constantes ;
+                elles peuvent être des expressions arbitraires
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> base = 1024;
+                  <span style="color: #0000ff">var</span> table = [base, base+1, base+2, base+3];</pre>
+              </div>
+              <p>
+                Si vous omettez une valeur d'un littéral de tableau, l'élément omis reçoit la valeur undefined
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> count = [1,,3]; <span style="color: #008000">// An array with 3 elements, the middle one undefined.</span>
+                  <span style="color: #0000ff">var</span> undefs = [,,]; <span style="color: #008000">// An array with 2 elements, both undefined.</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 40-->
+          <div class="slide">
+            <div class="heading">
+              Creating Arrays
+            </div>
+            <div class="content">
+              <p>Une autre façon de créer un tableau est d'utiliser le <b>constructeur</b> Array(). 
+                Je vais expliquer ce qu'est un <b>constructeur</b> un peu plus tard. 
+                Je n'inclus cette méthode que par souci d'exhaustivité. 
+                Vous pouvez invoquer ce <b>constructeur</b> de trois manières différentes
+              </p>
+              <ul>
+                <li>
+                  <p>Appelez-le sans arguments</p>
+                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                      <pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">var</span> a = <span style="color: #0000ff">new</span> Array();</pre>
+                    </div>
+                </li>
+                <li>
+                  <p>L'appeler avec un seul argument numérique, qui spécifie une longueur</p>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">var</span> a = <span style="color: #0000ff">new</span> Array(10);</pre>
+                  </div>
+                </li>
+                <li><p>Spécifier explicitement deux ou plusieurs éléments de tableau ou un seul élément non numérique pour le tableau</p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">var</span> a = <span style="color: #0000ff">new</span> Array(5, 4, 3, 2, 1, <span style="color: #a31515">&quot;testing, testing&quot;</span>) ;</pre>
+                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--slide 41-->
+          <div class="slide">
+            <div class="heading">
+              Lecture et écriture des éléments d'un Array
+            </div>
+            <div class="content">
+              <p>Vous accédez à un élément d'un tableau en utilisant l'opérateur <b>[ ]</b>. 
+                Une référence au tableau doit apparaître à gauche des crochets. 
+                Une expression arbitraire dont la valeur est un nombre <b>entier non négatif</b> doit se trouver à l'intérieur des parenthèses.
+                Vous pouvez utiliser cette syntaxe pour lire et écrire la valeur d'un élément d'un tableau. 
+                Ainsi, les instructions suivantes sont toutes <b>légales</b> en JavaScript :
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> a = [<span style="color: #a31515">&quot;world&quot;</span>] ; <span style="color: #008000">// Commence par un tableau à un élément</span>
+                  <span style="color: #0000ff">var</span> value = a[0] ; <span style="color: #008000">// Lecture de l&#39;élément 0</span>
+                  a[1] = 3.14 ; <span style="color: #008000">// Écriture de l&#39;élément 1</span>
+                  i = 2 ;
+                  a[i] = 3 ; <span style="color: #008000">// Écriture de l&#39;élément 2</span>
+                  a[i + 1] = <span style="color: #a31515">&quot;hello&quot;</span> ; <span style="color: #008000">// Écriture de l&#39;élément 3</span>
+                  a[a[i]] = a[0] ; <span style="color: #008000">// Lecture des éléments 0 et 2, écriture de l&#39;élément 3</span>
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 42-->
+          <div class="slide">
+            <div class="heading">
+              Arrays
+            </div>
+            <div class="content">
+              <p>
+                Exercice : enregistrez 5 variables prédéfinies dans un tableau et donnez le contenu du tableau. 
+                Pour imprimer le contenu du tableau, utilisez <b>console.log</b> et concaténer les éléments du tableau avec le symbole <b>+</b>.
+              </p>
+              <iframe
+                frameborder="0"
+                height="85%"  
+                src="https://onecompiler.com/embed/javascript/3yehesg7k"
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 43-->
+          <div class="slide">
+            <div class="heading">
+              Array Length
+            </div>
+            <div class="content">
+              <p>
+                Chaque tableau possède une propriété de longueur (<b>length</b>). La propriété length spécifie le nombre d'éléments du tableau. 
+                Sa valeur est supérieure d'une unité à l'indice le plus élevé du tableau
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  [].length <span style="color: #008000">// =&gt; 0 : le tableau n&#39;a pas d&#39;éléments</span>
+                  [<span style="color: #a31515">&#39;a&#39;</span>, <span style="color: #a31515">&#39;b&#39;</span>, <span style="color: #a31515">&#39;c&#39;</span>].length <span style="color: #008000">// =&gt; 3 : l&#39;indice le plus élevé est 2, la longueur est 3</span>
+                </pre>
+              </div>
+              <p>
+                Si vous définissez la propriété <b>length</b> à un nombre entier non négatif <b>n</b> inférieur à sa valeur actuelle, 
+                tous les éléments du tableau dont l'index est supérieur ou égal à <b>n</b> sont supprimés du tableau.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                a = [1,2,3,4,5] ; <span style="color: #008000">// On commence avec un tableau de 5 éléments.</span>
+                a.length = 3 ; <span style="color: #008000">// a est maintenant [1,2,3].</span>
+                a.length = 0 ; <span style="color: #008000">// Supprime tous les éléments. a est [].</span>
+                a.length = 5 ; <span style="color: #008000">// La longueur est de 5, mais il n&#39;y a pas d&#39;éléments, comme new Array(5).</span>
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 44-->
+          <div class="slide">
+            <div class="heading">
+              Array Manipulation
+            </div>
+            <div class="content">
+              <p>
+                Il existe de nombreuses fonctions de tableau directement disponibles sur un type de tableau. 
+                <b>Je ne vais pas les détailler</b> car nous n'avons pas encore abordé les fonctions et cela pourrait prêter à confusion. 
+                Cependant, je veux donner un aperçu <b>rapide</b> de ce qui est possible avec les tableaux et montrer une courte liste de fonctions 
+                qui sont souvent utilisées pour manipuler les tableaux.
+              </p>
+              <iframe id="arrayVisualizer" src="arrayVisualizer.html" width="100%" height="105%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 62-->
+          <div class="slide">
+            <div class="heading">
+              Bloc syntax
+            </div>
+            <div class="content">
+                <p>Un bloc est un morceau de texte de programme Javascript qui est exécuté en tant qu'unité.
+                </p>
+                <p>
+                  Toutes les instructions composées Javascript:
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                  Ligne d'en-tête{
+                          Bloc d'instructions imbriquées
+                  }</pre>
+                </div>
+                <br>
+                <p>
+                  Le bloc est délimité par une paire d'accolades { } et elles sont obligatoires.
+                </p>
+            </div>
+          </div>
+
+          <!--slide 79-->
+          <div class="slide">
+            <div class="heading">
+              Functions
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <ul>
+                    <li>Une fonction est un bloc de code qui ne s'exécute que lorsqu'il est appelé.</li>
+                    <br>
+                    <li>Vous pouvez transmettre des données, appelées paramètres, à une fonction.</li>
+                    <br>
+                    <li>Une fonction peut renvoyer des données comme résultat.</li>
+                  </ul>
+                </div>
+                <div style="width:60%">
+                    <img src="image/function.svg" style="width:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 80-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Pourquoi utiliser des fonctions ?
+            </div>
+            <div class="content">
+              <p>Avant d'entrer dans les détails, il faut établir une image claire de ce que sont les fonctions</p>
+              <ul>
+                <li><b>Maximiser la réutilisation du code et minimiser la redondance</b></li>
+                <br>
+                <li><b>Procedural decomposition</b>(diviser les systèmes en parties)</li>
+              </ul>
+              <img src="image/pizza.svg" class="html-css-logo" style="left: 30%; top:46%; width:50%;height: 50%;">
+            </div>
+          </div>
+
+          <!--slide 80-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Définir une fonction
+            </div>
+            <div class="content">
+              <p>Une fonction est créée avec une expression qui commence par le mot clé <b>function</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">function</span> nom(parameter1, parameter2, parameter3) {
+                    <span style="color: #008800; font-style: italic">// code à exécuter</span>
+                  }</pre>
+              </div>
+              <img src="image/functiondescriptionsimple.svg" class="html-css-logo" style="left: 15%; top:30%; width:70%; height:70%">
+            </div>
+          </div>
+
+          <!--slide 80-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Définir une fonction
+            </div>
+            <div class="content">
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">const</span> nom = <span style="color: #000080; font-weight: bold">function</span>(parameter1, parameter2, parameter3) {
+                    <span style="color: #008800; font-style: italic">// code à exécuter</span>
+                  }</pre>
+              </div>
+
+              <img src="image/functiondescription.svg" class="html-css-logo" style="left: 15%; top:30%; width:70%; height:70%">
+            </div>
+          </div>
+
+          <!--slide 82-->
+          <div class="slide">
+            <div class="heading">
+              Functions - function invocation
+            </div>
+            <div class="content">
+              <iframe
+              frameborder="0"
+              height="100%"  
+              src="https://onecompiler.com/embed/javascript/3yfyhv2d5"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 85-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Scopes
+            </div>
+            <div class="content">
+              <br>
+              <div class="flex-container">
+                <div>
+                  <p>Lorsque vous utilisez un nom dans un programme, Javascript crée, modifie ou recherche le nom dans 
+                    ce que l'on appelle un <b>espace de noms, c'est-à-dire un endroit où vivent les noms</b>.
+                  </p>
+                </div>
+                <div>
+                  <img src="image/variable-living-space.svg" style="width: 100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 86-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Scopes
+            </div>
+            <div class="content">
+              <p>les variables peuvent être assignées à trois endroits différents, correspondant à trois scopes différentes
+              </p>
+              <div class="flex-container">
+                <div>
+                  <p><b>Block scope</b></p>
+                </div>
+                <div style="width:80%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                    {
+                      <span style="color: #000080; font-weight: bold">let</span> x = <span style="color: #0000FF">2</span>;
+                    }</pre>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-container">
+                <div>
+                  <p><b>Block scope</b></p>
+                </div>
+                <div style="width:80%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-style: italic">// le code ici ne peut PAS utiliser le nom de la voiture</span>
+                    <span style="color: #000080; font-weight: bold">function</span> myFunction() {
+                      <span style="color: #000080; font-weight: bold">var</span> carName = <span style="color: #0000FF">&quot;Volvo&quot;</span> ;
+                      <span style="color: #008800; font-style: italic">// le code ici peut utiliser carName</span>
+                    }
+                    <span style="color: #008800; font-style: italic">// le code ici ne peut PAS utiliser carName</span></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-container">
+                <div>
+                  <p><b>Global scope</b></p>
+                </div>
+                <div style="width:80%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #000080; font-weight: bold">let</span> carName = <span style="color: #0000FF">&quot;Volvo&quot;</span> ;
+                      <span style="color: #008800; font-style: italic">// le code ici peut utiliser carName</span>
+                      <span style="color: #000080; font-weight: bold">function</span> myFunction() {
+                      <span style="color: #008800; font-style: italic">// le code ici peut également utiliser carName</span>
+                      }</pre>
+                  </div>
+                  
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <!--slide 47-->
+          <div class="slide">
+            <div class="heading">
+              Function - Exercise
+            </div>
+            <div class="content">
+              <p>
+                Écrivez une fonction JavaScript pour imprimer le message "Hello World".
+              </p>
+              <iframe
+              frameborder="0"
+              height="85%"  
+              src="https://onecompiler.com/embed/javascript/3yfyr5f3g"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 92-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Arguments
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <p>Les diapositives suivantes poursuivent l'histoire des fonctions en étudiant les concepts du passage d'arguments en Python,
+                      c'est-à-dire la façon dont les objets sont envoyés aux fonctions en tant que données d'entrée. 
+                  </p>
+                  <p>Comme nous le verrons, <b>les arguments</b> (aussi appelés paramètres) sont affectés à des <b>noms dans une fonction</b>, 
+                    mais ils ont plus à voir avec les références d'objets qu'avec les scopes de variables.</p>
+                </div>
+                <div>
+                  <img src="image/arguments.svg" style="width: 90%;">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--slide 93-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Argument-Passing Basics
+            </div>
+            <div class="content"> 
+              <div class="flex-container">
+                <div style="width: 60%;">
+                  <p><b>Les arguments sont transmis en assignant automatiquement des objets aux noms de variables locales. </b>
+                  </p>
+                  <p>Les arguments de fonction (références à des objets partagés envoyées par l'appelant) ne sont qu'un autre 
+                    exemple d'affectation Javascript à l'œuvre. Les objets passés en tant qu'arguments ne sont jamais copiés automatiquement.
+                  </p>
+                  <p>
+                    <b>C'est un peu comme faire : var box = box2 = "text"</b>
+                  </p>
+                </div>
+                <div>
+                  <img src="image/argumentPassing.svg" style="width: 85%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 94-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Argument-Passing Basics
+            </div>
+            <div class="content"> 
+              <div class="flex-container">
+                <div>
+                  <p><b>L'affectation des noms d'arguments à l'intérieur d'une fonction n'affecte pas l'appelant.</b>
+                  </p>
+                  <br>
+                  <p>
+                    <b>C'est un peu comme faire :</b>
+                  </p>
+                  <div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      box <span style="color: #666666">=</span> box2 <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;text&quot;</span>
+                      box2 <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;nouveau texte&quot;</span></pre>
+                  </div>
+                </div>
+                <div style="width:52%">
+                  <img src="image/argumentAssignment.svg" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 95-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Argument-Passing Basics
+            </div>
+            <div class="content"> 
+              <div class="flex-container">
+                <div style="width:64%">
+                  <p><b>La modification de l'argument d'un objet mutable dans une fonction peut avoir un impact sur l'appelant.</b>
+                  </p>
+                  <p>
+                    <b>Exemple :</b>
+                  </p>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      arr = [<span style="color: #009999">1</span>,<span style="color: #009999">2</span>,<span style="color: #009999">3</span>,<span style="color: #009999">4</span>];
+                      <span style="color: #0000aa">function</span> mutate(arr){
+                        arr[<span style="color: #009999">0</span>] = <span style="color: #009999">100</span>
+                      }
+                      mutate(arr);
+                      console.log(arr[<span style="color: #009999">0</span>]);</pre>
+                  </div>
+                </div>
+                <div style="width:52%">
+                  <img src="image/mutable.svg" style="width: 100%;">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      arr = [<span style="color: #009999">1</span>,<span style="color: #009999">2</span>,<span style="color: #009999">3</span>,<span style="color: #009999">4</span>];
+                      <span style="color: #0000aa">function</span> mutate(arr){
+                        arr = [<span style="color: #009999">100</span>,<span style="color: #009999">200</span>,<span style="color: #009999">300</span>,<span style="color: #009999">400</span>]
+                      }
+                      mutate(arr);
+                      console.log(arr[<span style="color: #009999">0</span>]);</pre>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 96-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Nombre d'arguments
+            </div>
+            <div class="content">
+              <p>Si nous définissons une fonction qui prend un paramètre mais que nous l'appelons avec trois, le langage ne se plaint pas 
+              </p>
+              <p>Cette fonction attend 1 argument, et reçoit 3 arguments :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                <span style="color: #000080; font-weight: bold">function</span> square(x) { <span style="color: #000080; font-weight: bold">return</span> x * x; }
+                console.log(square(<span style="color: #0000FF">4</span>, <span style="color: #000080; font-weight: bold">true</span>, <span style="color: #0000FF">&quot;hedgehog&quot;</span>));</pre>
+              </div>
+              <br>
+              <p>Cette fonction attend 2 arguments, mais n'en reçoit qu'un seul:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">function</span> multiply(x, y) { <span style="color: #000080; font-weight: bold">return</span> x * y; }
+                  console.log(multiply(<span style="color: #0000FF">4</span>)); <span style="color: #008800; font-style: italic">//le deuxième paramètre devient undefined</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 100-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Paramètre Valeur par défaut
+            </div>
+            <div class="content">
+              <p>
+                Si nous appelons la fonction sans argument, elle utilise la valeur par défaut
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">function</span> multiply(x, y=<span style="color: #0000FF">4</span>) { <span style="color: #000080; font-weight: bold">return</span> x * y; } <span style="color: #008800; font-style: italic">//Le deuxième paramètre est un paramètre par défaut</span>
+                  console.log(multiply(<span style="color: #0000FF">8</span>)); <span style="color: #008800; font-style: italic">//result: 32</span></pre>
+              </div>
+              <br>
+              <img src="image/defaultParameter.svg" style="width:35%">
+            </div>
+          </div>
+
+          <!--slide 50-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison 
+            </div>
+            <div class="content">
+                <p>
+                  Les opérateurs de comparaison sont utilisés pour comparer deux valeurs et renvoyer un résultat booléen, 
+                  que nous testerons et sur lequel nous agirons dans une déclaration et un programme plus larges
+                </p>
+                <div class="flex-container">
+                  <div>
+                    <table class="tg">
+                      <thead>
+                        <tr>
+                          <th class="tg-0lax"><span style="font-weight:bold">Operator</span></th>
+                          <th class="tg-0lax"><span style="font-weight:bold">Nom</span></th>
+                          <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="tg-0lax">==</td>
+                          <td class="tg-0lax">Egale</td>
+                          <td class="tg-0lax">x == y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">==</td>
+                          <td class="tg-0lax">valeur égale et type égal</td>
+                          <td class="tg-0lax">x == y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">!=</td>
+                          <td class="tg-0lax">Non égal</td>
+                          <td class="tg-0lax"> x != y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&gt;</td>
+                          <td class="tg-0lax">Supérieur à</td>
+                          <td class="tg-0lax">x &gt; y<br></td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&lt;</td>
+                          <td class="tg-0lax">Inférieur à</td>
+                          <td class="tg-0lax">x &lt; y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&gt;=</td>
+                          <td class="tg-0lax">Supérieur ou égal à</td>
+                          <td class="tg-0lax">x &gt;= y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&lt;=</td>
+                          <td class="tg-0lax">Inférieur ou égal à</td>
+                          <td class="tg-0lax">x &lt;= y</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div>
+                    <img src="image/scale.svg" style="width:70%;">
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 51-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-0lax"><span style="font-weight:bold">Operator exemple</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Illustration</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Résultat</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0lax">1 &lt; 2</td>
+                        <td class="tg-0lax"><img src="image/scale1-2.svg" style="width:47%;"></td>
+                        <td class="tg-0lax"><span style="color:rgb(2, 85, 27)"><b>True</b></span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">2.0 &gt;= 1</td>
+                        <td class="tg-0lax"><img src="image/scale20-1.svg" style="width:47%;"></td>
+                        <td class="tg-0lax"><span style="color:rgb(2, 85, 27)"><b>True</b></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-0lax"><span style="font-weight:bold">Operator exemple</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Illustration</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Résultat</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0lax">2.0 == 2.0 </td>
+                        <td class="tg-0lax"><img src="image/scale20-20.svg" style="width:60%;"></td>
+                        <td class="tg-0lax"><span style="color:rgb(2, 85, 27)"><b>True</b></span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">2.0 != 2.0</td>
+                        <td class="tg-0lax"><img src="image/scale20-20.svg" style="width:60%;"></td>
+                        <td class="tg-0lax"><span style="color:red"><b>False</b></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--slide 53-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison - Quiz
+            </div>
+            <div class="content">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScP5xI3CL5xsW1NHLSrBd3M7fC7aBi0DheBGSPr0BVBTRDisw/viewform?embedded=true" width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+            </div>
+          </div>
+
+          <!--slide 54-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques
+            </div>
+            <div class="content">
+              <p>Il existe trois opérateurs d'expression booléenne en javascript (Opérateurs logiques)</p>
+              <table class="tg" style="width:100%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Operator</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Description</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">&&</td>
+                    <td class="tg-0lax">Retourne Vrai si les deux déclarations sont vraies</td>
+                    <td class="tg-0lax">x &lt; 5 &&  x &lt; 10</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">||</td>
+                    <td class="tg-0lax">Renvoie Vrai si l'une des déclarations est vraie.</td>
+                    <td class="tg-0lax">x &lt; 5 || x &lt; 4</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">!</td>
+                    <td class="tg-0lax">Inverse le résultat, renvoie Faux si le résultat est vrai.</td>
+                    <td class="tg-0lax">!(x &lt; 5 && x &lt; 10)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="image/andornot.svg" style="width:58%; margin-top:1%">
+            </div>
+          </div>
+
+          <!--slide 55-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - &&
+            </div>
+            <div class="content">
+              <p>Elle donne <b>True</b> si les <b>deux conditions</b> sont <b>True</b>. Et elle donne <b>False</b> si <b>l'une ou l'autre</b> des conditions a ou b est <b>False</b>.</p>
+              <table class="tg" style="width:100%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">a</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">b</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">a && b</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  console.log(<span style="color: #000080; font-weight: bold">true</span> &amp;&amp; <span style="color: #000080; font-weight: bold">true</span>) <span style="color: #008800; font-style: italic">//True</span>
+                  console.log(<span style="color: #000080; font-weight: bold">true</span> &amp;&amp; <span style="color: #000080; font-weight: bold">false</span>) <span style="color: #008800; font-style: italic">//False</span>
+                  console.log(<span style="color: #000080; font-weight: bold">false</span> &amp;&amp; <span style="color: #000080; font-weight: bold">false</span>) <span style="color: #008800; font-style: italic">//False</span>
+                  console.log(<span style="color: #000080; font-weight: bold">false</span> &amp;&amp; <span style="color: #000080; font-weight: bold">true</span>) <span style="color: #008800; font-style: italic">//False</span></pre>
+              </div>
+  
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - AND
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/and-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">B</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/andGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 56-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - ||
+            </div>
+            <div class="content">
+              <p>Comme l'opérateur <b>&&</b>, l'opérateur <b>||</b> vérifie plusieurs conditions. Mais il renvoie <b>True</b> lorsque <b>l'une ou l'autre ou les deux conditions</b> individuelles sont vraies (True) :</p>
+              <table class="tg" style="width:100%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">a</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">b</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">a || b</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  console.log(<span style="color: #000080; font-weight: bold">true</span> || <span style="color: #000080; font-weight: bold">true</span>) <span style="color: #008800; font-style: italic">//True</span>
+                  console.log(<span style="color: #000080; font-weight: bold">true</span> || <span style="color: #000080; font-weight: bold">false</span>) <span style="color: #008800; font-style: italic">//True</span>
+                  console.log(<span style="color: #000080; font-weight: bold">false</span> || <span style="color: #000080; font-weight: bold">false</span>) <span style="color: #008800; font-style: italic">//False</span>
+                  console.log(<span style="color: #000080; font-weight: bold">false</span> || <span style="color: #000080; font-weight: bold">true</span>) <span style="color: #008800; font-style: italic">//True</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 47-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - OR
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/or-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">B</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/orGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 57-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - !
+            </div>
+            <div class="content">
+              <p>L'opérateur <b>not</b> s'applique à une seule condition. Et il inverse le résultat de cette condition, <b>True</b> devient <b>False</b> et <b>False</b> devient <b>True</b>.</p>
+              <table class="tg" style="width:30%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">a</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">! a</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; width:30%">
+                <pre style="margin: 0; line-height: 125%">
+                  console.log(!<span style="color: #000080; font-weight: bold">true</span>) <span style="color: #008800; font-style: italic">//False</span>
+                  console.log(!<span style="color: #000080; font-weight: bold">false</span>) <span style="color: #008800; font-style: italic">//True</span></pre>
+              </div>
+
+              <img src="image/uno-reverse.svg" class="html-css-logo" style="left: 40%;top: 30%;height: 66%; width:unset">
+            </div>
+          </div>
+
+          <!--slide 51-->
+          <div class="slide">
+            <div class="heading">
+              Logic Gates - NOT
+            </div>
+            <div class="content">
+              <iframe
+                src="https://logic.ly/embed/?document_path=/lessons/documents/not-gate.logicly"
+                width="70%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+              
+              <div style="display:inline-block; padding-left:2%; width:29%">
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">A</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">RESULT</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">0</td>
+                      <td class="tg-0lax">1</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">1</td>
+                      <td class="tg-0lax">0</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                <img src="image/notGate.svg"  style="padding-top: 10%; width:45%">
+              </div>
+            </div>
+          </div>
+
+          <!--slide 58-->
+          <div class="slide">
+            <div class="heading">
+              Prédominance des opérateurs logiques
+            </div>
+            <div class="content">
+              <p>Lorsque vous mélangez les opérateurs logiques dans une expression, 
+                Javascript les évalue dans l'ordre qui est appelé la précédence des opérateurs.</p>
+
+              <p>L'exemple suivant montre la préséance des opérateurs <b>!</b>, <b>&&</b>, et <b>||</b> :</p>
+              <table class="tg" style="width:30%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Operator</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Prédominance</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">!</td>
+                    <td class="tg-0lax">Haut</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">&&</td>
+                    <td class="tg-0lax">Moyen</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">||</td>
+                    <td class="tg-0lax">Faible</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="image/dominance.svg" class="html-css-logo" style="left: 36%;top: 45%;height: unset; width:50%">
+            </div>
+          </div>
+
+          <!--slide 59-->
+          <div class="slide">
+            <div class="heading">
+              Prédominance des opérateurs logiques
+            </div>
+            <div class="content">
+              <table class="tg" style="height:50%">
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">a || b && c</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">a || (b && c)</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">a && b || c && d</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">(a && b) || (c && d)</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">a && b && c || d</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">((a && b) && c) || d</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">! a && b || c</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">((! a) && b) || c</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">let</span> a = <span style="color: #000080; font-weight: bold">true</span>;
+                  <span style="color: #000080; font-weight: bold">let</span> b = <span style="color: #000080; font-weight: bold">false</span>;
+                  <span style="color: #000080; font-weight: bold">let</span> c = <span style="color: #000080; font-weight: bold">true</span>;
+
+                  console.log(a || b &amp;&amp; c) <span style="color: #008800; font-style: italic">//True</span>
+                  console.log(a || (b &amp;&amp; c)) <span style="color: #008800; font-style: italic">//True (même instruction que ci-dessus)</span>
+                  console.log(! a &amp;&amp; b || c) <span style="color: #008800; font-style: italic">//True</span>
+                  console.log(((! a) &amp;&amp; b) || c) <span style="color: #008800; font-style: italic">//True (même instruction que ci-dessus)</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 60-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - Quiz 
+            </div>
+            <div class="content">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNF6SkqXJOZYB8bO8pOl9V3bAJG4Is5IY7pEk0DuBkCrCFjA/viewform?embedded=true" width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>            </div>
+          </div>
+
+          <!--slide 64-->
+          <div class="slide">
+            <div class="heading">
+              if Tests 
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div style="width:40%">
+                  <p>Ce chapitre présente l'instruction <b>if</b> de Javascript, qui est la principale instruction utilisée 
+                    pour sélectionner des actions alternatives en fonction des résultats des tests.
+                  </p>
+                </div>
+                <div style="width:60%;">
+                  <img src="image/ifelse.svg" style="width:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 65-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Format général 
+            </div>
+            <div class="content">
+                <p>
+                  Lorsque l'instruction if s'exécute, Javascript exécute le bloc de code associé au premier test dont l'évaluation est vraie, 
+                  ou le bloc else si tous les tests sont faux. La forme générale d'une instruction if ressemble à ceci
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">if</span> (test1){ <span style="color: #10863d"># if test</span>
+                        statements1 <span style="color: #10863d"># bloc associé</span>
+                    }
+                    <span style="color: #008800; font-weight: bold">else if</span> (test2){ <span style="color: #10863d"># Optionnel else if</span>
+                        statements2
+                    }
+                    <span style="color: #008800; font-weight: bold">else</span>{ <span style="color: #10863d"># Optionnel else</span>
+                        statements3
+                    }</pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 66-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Format général 
+            </div>
+            <div class="content">
+              <iframe
+              frameborder="0"
+              height="92%"  
+              src="https://onecompiler.com/embed/javascript/3yg3wp9xt"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 66-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Exercice
+            </div>
+            <div class="content">
+              <p>Faites un message d'accueil "bonne journée" si l'heure est inférieure à 18:00</p>
+              <iframe
+              frameborder="0"
+              height="92%"  
+              src="https://onecompiler.com/embed/javascript/3yg6n97rx"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 66-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Exercice
+            </div>
+            <div class="content">
+              <p>Maintenant, nous prolongeons l'exercice précédent et souhaitons "Bonne soirée" après 18:00.</p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3yg6n5zqw"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 66-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Exercice
+            </div>
+            <div class="content">
+              <p>Ok maintenant, la dernière étape est de souhaiter une "bonne matinée" avant 9:00.</p>
+              <iframe
+              frameborder="0"
+              height="92%"  
+              src="https://onecompiler.com/embed/javascript/3yg6n5zqw"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 66-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Nested
+            </div>
+            <div class="content">
+              <p>Nous pouvons imbriquer les if tests bien sûr</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">if</span> (condition) {
+                    <span style="color: #008800; font-style: italic">// bloc de code à exécuter si la condition est vraie</span>
+                    <span style="color: #000080; font-weight: bold">if</span> (condition) {
+                      <span style="color: #008800; font-style: italic">// Bloc de code à exécuter si la condition est vraie.</span>
+                    } 
+                  } </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 66-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Exercice
+            </div>
+            <div class="content">
+              <p>Comme je viens d'Allemagne, nous disons autre chose selon l'heure de la journée. 
+                Développons notre exercice en vérifiant si nous sommes en Allemagne ou non.</p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3yg6nvz8z"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+          
+          <!--slide 67-->
+          <div class="slide">
+            <div class="heading">
+              if/else Ternary Expression
+            </div>
+            <div class="content">
+              <p>Parfois, les éléments d'une déclaration sont si simples qu'il semble exagéré de les répartir sur plusieurs lignes.</p>
+              <p>Javascript nous offre un format d'expression qui nous permet de faire des if/else dans une seule expression. </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">condition ? exprIfTrue : exprIfFalse</pre></div>
+
+              <p>Navigation exemple</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">let</span> direction = <span style="color: #0000FF">&quot;Toulouse&quot;</span>;
+                  <span style="color: #000080; font-weight: bold">let</span> result = direction === <span style="color: #0000FF">&quot;Toulouse&quot;</span> ? <span style="color: #0000FF">&quot;aller à gauche&quot;</span> : <span style="color: #0000FF">&quot;aller à droite&quot;</span>
+                  console.log(result);</pre>
+              </div>
+            </div>
+          </div>
+          
+          <!--slide 66-->
+          <div class="slide">
+            <div class="heading">
+              if/else Ternary Expression - Exercice
+            </div>
+            <div class="content">
+              <p><b>Exercice : Pouvez-vous diminuer le nombre de ligne avec des tests ternary ?</b></p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3yg6sjezg"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 66-->
+          <div class="slide">
+            <div class="heading">
+              if/else chained condition - Exercice
+            </div>
+            <div class="content">
+              <p>Le coût d'entrée dans un parc pour enfants est de 10€ pour toute personne âgée de 4 à 12 ans. 
+                Les personnes plus âgées ne paient que 6€. 
+                Écrivez un <b>test if</b> utilisant <b>&&</b> qui vérifie la tranche d'âge et ajuste le prix en conséquence.</p>
+              <iframe
+              frameborder="0"
+              height="85%"  
+              src="https://onecompiler.com/embed/javascript/3yg6ufrjv"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 68-->
+          <div class="slide">
+            <div class="heading">
+              Switch
+            </div>
+            <div class="content">
+              <p>Utilisez l'instruction switch pour sélectionner l'un des nombreux blocs de code à exécuter</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">switch</span>(expression) {
+                    <span style="color: #000080; font-weight: bold">case</span> x:
+                    <span style="color: #008800; font-style: italic">// code block</span>
+                    <span style="color: #000080; font-weight: bold">break</span>;
+                  <span style="color: #000080; font-weight: bold">case</span> y:
+                    <span style="color: #008800; font-style: italic">// code block</span>
+                    <span style="color: #000080; font-weight: bold">break</span>;
+                  <span style="color: #000080; font-weight: bold">default</span>:
+                    <span style="color: #008800; font-style: italic">// code block</span>
+                  }</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 68-->
+          <div class="slide">
+            <div class="heading">
+              Classic if/else
+            </div>
+            <div class="content">
+              <p>Cet exemple utilise le numéro du jour de la semaine pour calculer le nom du jour de la semaine.</p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3yg6w2eh5"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 68-->
+          <div class="slide">
+            <div class="heading">
+              Switch
+            </div>
+            <div class="content">
+              <p>Cet exemple utilise le switch</p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3yg6vj5hm"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 68-->
+          <div class="slide">
+            <div class="heading">
+              while et for Loops
+            </div>
+            <div class="content">
+              <p>Je vais présenter les les deux principales constructions de boucles du langage - des énoncés qui répètent une action encore et encore</p>
+              <iframe id="loop" src="image/loop.svg" width="45.5%" height="90%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+            <!--slide 69-->
+          <div class="slide">
+            <div class="heading">
+              while Loops
+            </div>
+            <div class="content">
+              <p>En termes simples, while exécute de manière répétée un bloc d'instructions (normalement indentées) tant qu'un test situé 
+                en haut de l'instruction continue d'être évalué à une valeur vraie.
+              </p>
+              <div class="flex-container">
+                <div style="width:20%">
+                  <p><b>Format général</b></p>
+                </div>
+                <div style="width:80%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #000080; font-weight: bold">while</span> (test){<span style="color: #008800; font-style: italic">//Test en boucle</span>
+                        statements <span style="color: #008800; font-style: italic">// Corps de la boucle </span>
+                      }</pre>
+                  </div>
+    
+                </div>
+              </div>
+              <br>
+              <div class="flex-container">
+                <div style="width:20%">
+                  <p><b>Exemple</b></p>
+                </div>
+                <div style="width:80%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #000080; font-weight: bold">while</span>(<span style="color: #000080; font-weight: bold">true</span>){
+                        console.log(<span style="color: #0000FF">&#39;Here we are now&#39;</span>)
+                      }</pre>
+                  </div>
+                </div>
+              </div>
+              <img src="image/kurtcobain.svg" class="html-css-logo" style="width:40%; left: 50%; top:52%; height:unset">
+            </div>
+          </div>
+
+          <!--slide 70-->
+          <div class="slide">
+            <div class="heading">
+              while Loops
+            </div>
+            <div class="content">
+              <p>Le code suivant compte à partir de la valeur de a jusqu'à, mais sans inclure, b. 
+                Nous verrons plus tard une façon plus simple de le faire avec une boucle for Python et la fonction intégrée range.
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3yg46233z"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 76-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - exercise
+            </div>
+            <div class="content">
+              <p>Comptez de 1 à 100 en utilisant une boucle while et affichez chaque étape sur la console avec print().</p>
+              <iframe
+              frameborder="0"
+              height="98%"  
+              src="https://onecompiler.com/embed/javascript/3yg49ehsv"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 78-->
+          <div class="slide">
+            <div class="heading">
+              for Loops
+            </div>
+            <div class="content">
+              <p>La boucle for est un itérateur générique en Javascript : elle peut parcourir les éléments d'une séquence ordonnée ou d'un autre objet itérable.</p>
+              <br>
+              <p><b>Format général</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">for</span> (key <span style="color: #000080; font-weight: bold">in</span> object) {
+                    <span style="color: #008800; font-style: italic">// code block to be executed</span>
+                  }</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 77-->
+          <div class="slide">
+            <div class="heading">
+              for in Loops - exemple
+            </div>
+            <div class="content">
+              <p>imprimer tous les éléments d'une liste en utilisant une boucle for</p>
+
+              <iframe
+              frameborder="0"
+              height="98%"  
+              src="https://onecompiler.com/embed/javascript/3yg4a6rps"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 78-->
+          <div class="slide">
+            <div class="heading">
+              Array.forEach() Loops
+            </div>
+            <div class="content">
+              <p>La méthode forEach() appelle une fonction une fois pour chaque élément du tableau.</p>
+              <br>
+              <p><b>Format général</b></p>
+              <iframe
+              frameborder="0"
+              height="80%"  
+              src="https://onecompiler.com/embed/javascript/3yg4akfs8"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 78-->
+          <div class="slide">
+            <div class="heading">
+              For Of Loop
+            </div>
+            <div class="content">
+              <p><b>Format général</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">for</span> (variable of iterable) {
+                    <span style="color: #008800; font-style: italic">// code block to be executed</span>
+                  }</pre>
+              </div>
+              <iframe
+              frameborder="0"
+              height="75%"  
+              src="https://onecompiler.com/embed/javascript/3yg4b9q2e"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 78-->
+          <div class="slide">
+            <div class="heading">
+              For Loop
+            </div>
+            <div class="content">
+              <p>L'instruction for crée une boucle avec 3 expressions facultatives</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">for</span> (expression <span style="color: #0000FF">1</span>; expression <span style="color: #0000FF">2</span>; expression <span style="color: #0000FF">3</span>) {
+                    <span style="color: #008800; font-style: italic">// code block to be executed</span>
+                  }</pre>
+              </div>
+              <p><b>L'expression 1</b> est exécutée (une fois) avant l'exécution du bloc de code.</p>
+              <p><b>L'expression 2</b> définit la condition d'exécution du bloc de code.</p>
+              <p><b>L'expression 3</b> est exécutée (à chaque fois) après l'exécution du bloc de code.</p>
+              <div class="flex-container">
+                <div>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #000080; font-weight: bold">for</span> (<span style="color: #000080; font-weight: bold">let</span> i = <span style="color: #0000FF">0</span>; i &lt; <span style="color: #0000FF">5</span>; i++) {
+                        text += <span style="color: #0000FF">&quot;Le numéro est &quot;</span> + i + <span style="color: #0000FF">&quot;&lt;br&gt;&quot;</span>;
+                      }</pre>
+                  </div>
+                </div>
+                <div>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #000080; font-weight: bold">for</span>(;;){ <span style="color: #008800; font-style: italic">//tourne à l&#39;infini</span>
+                        console.log(<span style="color: #0000FF">&quot;in for loop&quot;</span>);
+                      }</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 78-->
+          <div class="slide">
+            <div class="heading">
+              Loop
+            </div>
+            <div class="content">
+              <p>La plupart du temps, nous devons faire une boucle du début à la fin. 
+                Si nous n'avons pas besoin de quelque chose de sophistiqué, il suffit d'utiliser la boucle "for of".</p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3yg6m7fwz"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 78-->
+          <div class="slide">
+            <div class="heading">
+              Loop - break, continue
+            </div>
+            <div class="content">
+              <p>L'instruction break "saute" d'une boucle.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">for</span> (<span style="color: #000080; font-weight: bold">let</span> i = <span style="color: #0000FF">0</span>; i &lt; <span style="color: #0000FF">10</span>; i++) {
+                    <span style="color: #000080; font-weight: bold">if</span> (i === <span style="color: #0000FF">3</span>) {
+                      <span style="color: #000080; font-weight: bold">break</span>; 
+                    }
+                    console.log(i);
+                  }</pre>
+              </div>
+              <br>
+              <p>L'instruction continue "saute" une itération de la boucle.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">for</span> (<span style="color: #000080; font-weight: bold">let</span> i = <span style="color: #0000FF">0</span>; i &lt; <span style="color: #0000FF">10</span>; i++) {
+                    <span style="color: #000080; font-weight: bold">if</span> (i === <span style="color: #0000FF">3</span>) { <span style="color: #000080; font-weight: bold">continue</span>; }
+                    console.log(i);
+                  }</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 78-->
+          <div class="slide">
+            <div class="heading">
+              Loop - break, continue
+            </div>
+            <div class="content">
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3ygpcxkgg"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 45-->
+          <div class="slide">
+            <div class="heading">
+              Objects
+            </div>
+            <div class="content">
+              <p>Le type de données fondamental de JavaScript est l'objet. Un objet est une valeur composite :
+                il regroupe plusieurs valeurs (valeurs primitives ou autres objets) et vous permet de stocker et de récupérer ces valeurs par nom. 
+                Un objet est une collection non ordonnée de propriétés, chacune ayant un nom et une valeur.
+                Les noms de propriétés sont des chaînes de caractères, on peut donc dire que les objets font correspondre des chaînes de caractères à des valeurs.
+              </p>
+              <p>Toute valeur en JavaScript qui n'est <b>pas</b> un <b>string</b>, un <b>nombre</b>, <b>true</b>, <b>false</b>, <b>null</b> ou <b>undefined</b> est un objet</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                <span style="color: #0000ff">var</span> myCar = <span style="color: #0000ff">new</span> Object();
+                myCar.make = <span style="color: #a31515">&quot;Ford&quot;</span>;
+                myCar.model = <span style="color: #a31515">&quot;Mustang&quot;</span>;
+                myCar.year = 1969;
+                </pre>
+              </div>
+              <img src="image/ford.svg" class="html-css-logo" style="left: 60%; top:56%">
+              <img src="image/Ford_Mustang.svg" class="html-css-logo" style="left: 50%; top:75%; width:40%;">
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Objects
+            </div>
+            <div class="content">
+              <p>Dans la vie réelle, une voiture est un <b>objet</b>.</p>
+              <p>
+                Une voiture a des <b>propriétés</b> comme le poids et la couleur, et des <b>méthodes</b> comme le démarrage et l'arrêt
+              </p>
+              <p>
+                Vous avez déjà appris que les variables JavaScript sont des conteneurs pour les valeurs de données.
+                Ce code attribue une valeur simple (Mustang) à une variable nommée voiture.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> voiture = <span style="color: #a31515">&quot;Mustang&quot;</span>;</pre>
+              </div>
+              <p>
+                Les objets sont aussi des variables. Mais les objets peuvent contenir plusieurs valeurs.
+                Ce code attribue plusieurs valeurs (Mustang, 500, rouge) à une variable nommée voiture :
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">const</span> voiture= {type : <span style="color: #a31515">&quot;Mustang&quot;</span>, modele : <span style="color: #a31515">&quot;500&quot;</span>, couleur : <span style="color: #a31515">&quot;rouge&quot;</span>} ; <span style="color: #008000">//une autre façon de créer un objet.</span></pre>
+              </div>
+              <img src="image/Ford_Mustang.svg" class="html-css-logo" style="left: 50%; top:79%;">
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Object Literals
+            </div>
+            <div class="content">
+              <p>Le moyen le plus simple de créer un objet est d'inclure un objet littéral dans votre code JavaScript.
+                 Un objet littéral est une liste de paires nom/valeur séparées par des virgules, entre accolades.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">var</span> empty = {} ; <span style="color: #008000">// Un objet sans propriétés</span>
+                  <span style="color: #0000ff">var</span> point = { x : 0, y : 0 } ; <span style="color: #008000">// Deux propriétés</span>
+                  <span style="color: #0000ff">var</span> point2 = { x : point.x, y : point.y + 1 } ; <span style="color: #008000">// Des valeurs plus complexes</span>
+                  <span style="color: #0000ff">var</span> book = {
+                    <span style="color: #a31515">&quot;titre principal&quot;</span> : <span style="color: #a31515">&quot;JavaScript&quot;</span>, <span style="color: #008000">// Les noms des propriétés incluent des espaces,</span>
+                    <span style="color: #a31515">&quot;sub-title&quot;</span> : <span style="color: #a31515">&quot;The Definitive Guide&quot;</span>, <span style="color: #008000">// et des traits d&#39;union, utilisez donc des chaînes de caractères.</span>
+                    auteur : {<span style="color: #008000">// La valeur de cette propriété est</span>
+                      firstname : <span style="color: #a31515">&quot;David&quot;</span>, <span style="color: #008000">//elle-même un objet. Notez que</span>
+                      surname : <span style="color: #a31515">&quot;Flanagan&quot;</span>, <span style="color: #008000">// ces noms de propriétés ne sont pas cités.</span>
+                    },
+                  };</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 47-->
+          <div class="slide">
+            <div class="heading">
+              Object Literals
+            </div>
+            <div class="content">
+              <p>
+                <b>Exercice</b> : Créez un objet de vous-même en utilisant des Object literals. 
+                Quels sont les attributs qu'il pourrait être intéressant de connaître à votre sujet ? 
+                Exemple : <b>prénom, nom de famille, sexe</b>
+              </p>
+              <iframe
+              frameborder="0"
+              height="85%"  
+              src="https://onecompiler.com/embed/javascript/3yemdjecs"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Accès aux propriétés des objets
+            </div>
+            <div class="content">
+              <p>Vous pouvez accéder aux propriétés des objets de deux manières
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">objectName.propertyName</pre></div>
+              <p>ou</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">objectName[<span style="color: #0000FF">&quot;propertyName&quot;</span>]</pre></div>
+              <iframe
+              frameborder="0"
+              height="65%"  
+              src="https://onecompiler.com/embed/javascript/3yfzazb8p"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Object methods
+            </div>
+            <div class="content">
+              <p>Les méthodes sont des actions qui peuvent être exécutées sur des objets.
+              </p>
+              <img src="image/methods.svg" style="width:80%">
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Object methods
+            </div>
+            <div class="content">
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3yg3gvfr3"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Object methods - Getter et Setter
+            </div>
+            <div class="content">
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3yg3k4c6c"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Object methods - Un exemple complexe mais meilleur
+            </div>
+            <div class="content">
+              <p>Les classes sont un moyen particulier de créer des objets.</p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3yg3me5pe"
+              width="100%"
+            ></iframe>
+            <img src="image/warning.svg" class="html-css-logo" style="left: 70%; top:63%; height:32%">
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="heading">
+              Objects
+            </div>
+          </div>
+        </section>
+
+        <section class="counter">
+          <input type="number" id="index" name="index" min="1" max="115" value="1" style="width:20%"> of 115
+        </section>
+
+        <section class="navigation">
+          <button id="full-screen" class="btn-screen show">
+            <span><b>⛶</b></span>
+          </button>
+
+          <button id="small-screen" class="btn-screen">
+            <span><b>✖</b></span>
+          </button>
+
+          <button id="left-btn" class="btn">
+            <span>❮</span>
+          </button>
+
+          <button id="right-btn" class="btn">
+            <span>❯</span>
+          </button>
+        </section>
+      </div>
+    </div>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

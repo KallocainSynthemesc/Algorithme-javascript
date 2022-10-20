@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="135.16609mm"
+   height="202.73856mm"
+   viewBox="0 0 135.16609 202.73856"
+   version="1.1"
+   id="svg2431"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="arithmetic.svg">
+  <defs
+     id="defs2425" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.34093468"
+     inkscape:cx="60.710017"
+     inkscape:cy="293.07643"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2428">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-15.058377,-6.1852992)">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:1.5"
+       id="rect3046"
+       width="105.77199"
+       height="3.8412657"
+       x="29.769812"
+       y="21.126961" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:1.5"
+       id="rect3046-9"
+       width="105.77199"
+       height="3.8412657"
+       x="29.847948"
+       y="54.785355" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:1.5"
+       id="rect3046-0"
+       width="105.77199"
+       height="3.8412657"
+       x="29.787888"
+       y="88.562271" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:1.5"
+       id="rect3046-2"
+       width="105.77199"
+       height="3.8412657"
+       x="29.769812"
+       y="122.30315" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:1.5"
+       id="rect3046-7"
+       width="105.77199"
+       height="3.8412657"
+       x="29.838406"
+       y="156.1543" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:1.5"
+       id="rect3046-24"
+       width="105.77199"
+       height="3.8412657"
+       x="29.787884"
+       y="189.93417" />
+    <g
+       id="abacus"
+       transform="matrix(4.2333332,0,0,4.2333332,-1788.7649,-547.41615)">
+      <path
+         id="Path_57"
+         data-name="Path 57"
+         d="M 430.092,130.772 H 426.1 v 47.891 h 3.991 v -47.891 z"
+         fill="#354077"
+         fill-rule="evenodd"
+         style="fill:#000000;fill-opacity:1" />
+      <path
+         id="Path_58"
+         data-name="Path 58"
+         d="m 458.029,130.772 h -3.991 v 47.891 h 3.991 z"
+         fill="#354077"
+         fill-rule="evenodd"
+         style="fill:#000000;fill-opacity:1" />
+      <path
+         id="Path_59"
+         data-name="Path 59"
+         d="m 436.078,132.768 a 1.995,1.995 0 1 1 -1.995,1.995 2,2 0 0 1 1.995,-1.995 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_60"
+         data-name="Path 60"
+         d="m 436.078,140.749 a 2,2 0 1 1 -1.995,2 2,2 0 0 1 1.995,-2 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_61"
+         data-name="Path 61"
+         d="m 436.078,148.731 a 2,2 0 1 1 -1.995,2 2,2 0 0 1 1.995,-2 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_62"
+         data-name="Path 62"
+         d="m 436.078,156.713 a 2,2 0 1 1 -1.995,2 2,2 0 0 1 1.995,-2 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_63"
+         data-name="Path 63"
+         d="m 436.078,164.7 a 2,2 0 1 1 -1.995,1.995 2,2 0 0 1 1.995,-1.995 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_64"
+         data-name="Path 64"
+         d="m 436.078,172.677 a 2,2 0 1 1 -1.995,1.995 2,2 0 0 1 1.995,-1.995 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_65"
+         data-name="Path 65"
+         d="m 440.069,132.768 a 1.995,1.995 0 1 1 -1.995,1.995 2,2 0 0 1 1.995,-1.995 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_66"
+         data-name="Path 66"
+         d="m 444.06,140.749 a 2,2 0 1 1 -1.995,2 2,2 0 0 1 1.995,-2 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_67"
+         data-name="Path 67"
+         d="m 440.069,148.731 a 2,2 0 1 1 -1.995,2 2,2 0 0 1 1.995,-2 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_68"
+         data-name="Path 68"
+         d="m 444.06,156.713 a 2,2 0 1 1 -1.995,2 2,2 0 0 1 1.995,-2 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_69"
+         data-name="Path 69"
+         d="m 444.06,164.7 a 2,2 0 1 1 -1.995,1.995 2,2 0 0 1 1.995,-1.995 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_70"
+         data-name="Path 70"
+         d="m 440.069,172.677 a 2,2 0 1 1 -1.995,1.995 2,2 0 0 1 1.995,-1.995 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_71"
+         data-name="Path 71"
+         d="m 448.051,132.768 a 1.995,1.995 0 1 1 -1.995,1.995 2,2 0 0 1 1.995,-1.995 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_72"
+         data-name="Path 72"
+         d="m 448.051,140.749 a 2,2 0 1 1 -1.995,2 2,2 0 0 1 1.995,-2 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_73"
+         data-name="Path 73"
+         d="m 448.051,148.731 a 2,2 0 1 1 -1.995,2 2,2 0 0 1 1.995,-2 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_74"
+         data-name="Path 74"
+         d="m 448.051,156.713 a 2,2 0 1 1 -1.995,2 2,2 0 0 1 1.995,-2 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_75"
+         data-name="Path 75"
+         d="m 448.051,164.7 a 2,2 0 1 1 -1.995,1.995 2,2 0 0 1 1.995,-1.995 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+      <path
+         id="Path_76"
+         data-name="Path 76"
+         d="m 448.051,172.677 a 2,2 0 1 1 -1.995,1.995 2,2 0 0 1 1.995,-1.995 z"
+         fill="#ffe959"
+         fill-rule="evenodd" />
+    </g>
+  </g>
+</svg>

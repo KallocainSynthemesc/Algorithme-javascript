@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="121.80093mm"
+   height="125.60035mm"
+   viewBox="0 0 121.80093 125.60035"
+   version="1.1"
+   id="svg1459"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="scale.svg">
+  <defs
+     id="defs1453" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.79039886"
+     inkscape:cx="202.79284"
+     inkscape:cy="420.04083"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1346"
+     inkscape:window-height="1040"
+     inkscape:window-x="130"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata1456">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0.30486176,-6.3166898)">
+    <g
+       id="g2139"
+       transform="matrix(0.26458333,0,0,0.26458333,-2.2707159,6.250544)">
+      <g
+         id="g2063">
+	<g
+   id="XMLID_22_">
+		<g
+   id="g2042">
+			<path
+   style="fill:#366e9c;fill-opacity:1"
+   d="m 237.61,13.25 c 9.92,0 17.99,8.07 17.99,17.99 0,9.92 -8.07,17.99 -17.99,17.99 -9.92,0 -18,-8.07 -18,-17.99 0,-9.92 8.08,-17.99 18,-17.99 z"
+   id="path2022" />
+
+			<path
+   style="fill:#366e9c;fill-opacity:1"
+   d="M 380.3,115.99 H 94.91 c 1.95,-6.49 7.98,-11.23 15.1,-11.23 H 365.2 c 7.12,0 13.15,4.74 15.1,11.23 z"
+   id="path2024" />
+
+			<path
+   style="fill:#366e9c;fill-opacity:1"
+   d="M 243.22,61.71 V 91.76 H 231.99 V 61.71 c 1.82,0.34 3.7,0.52 5.62,0.52 1.91,0 3.79,-0.18 5.61,-0.52 z"
+   id="path2026" />
+
+			<rect
+   x="231.99001"
+   y="128.99001"
+   style="fill:#366e9c;fill-opacity:1"
+   width="11.23"
+   height="177.77"
+   id="rect2028" />
+
+			<polygon
+   style="fill:#366e9c;fill-opacity:1"
+   points="353.54,447.98 360.64,447.98 360.64,461.96 114.58,461.96 114.58,447.98 121.68,447.98 "
+   id="polygon2030" />
+
+			<polygon
+   style="fill:#366e9c;fill-opacity:1"
+   points="259.12,421 347.04,421 347.04,434.98 128.18,434.98 128.18,421 216.09,421 "
+   id="polygon2032" />
+
+			<path
+   style="fill:#366e9c;fill-opacity:1"
+   d="M 252.62,319.76 V 408 h -30.03 v -88.24 h 2.83 c 0.02,0 0.04,0.01 0.07,0.01 h 24.23 c 0.02,0 0.04,-0.01 0.07,-0.01 z"
+   id="path2034" />
+
+			<polygon
+   style="fill:#366e9c;fill-opacity:1"
+   points="433.27,285.85 341.65,285.85 324.9,256.84 450.02,256.84 "
+   id="polygon2036" />
+
+			<polygon
+   style="fill:#366e9c;fill-opacity:1"
+   points="133.56,285.85 41.94,285.85 25.19,256.84 150.31,256.84 "
+   id="polygon2038" />
+
+			<path
+   style="fill:#333333"
+   d="m 466.91,247.09 c 0.58,1.01 0.87,2.13 0.87,3.25 0,1.13 -0.29,2.25 -0.87,3.25 l -24.26,42.01 c -1.16,2.02 -3.3,3.25 -5.62,3.25 H 337.9 c -2.32,0 -4.47,-1.23 -5.63,-3.25 l -24.25,-42.01 c -0.58,-1 -0.87,-2.12 -0.87,-3.25 0,-1.12 0.29,-2.24 0.87,-3.25 l 68.19,-118.1 H 256.22 v 177.77 h 2.9 c 3.59,0 6.5,2.91 6.5,6.5 V 408 h 87.92 c 3.59,0 6.5,2.91 6.5,6.5 v 20.48 h 7.1 c 3.59,0 6.5,2.91 6.5,6.5 v 26.98 c 0,3.58 -2.91,6.5 -6.5,6.5 H 108.08 c -3.59,0 -6.5,-2.92 -6.5,-6.5 v -26.98 c 0,-3.59 2.91,-6.5 6.5,-6.5 h 7.1 V 414.5 c 0,-3.59 2.91,-6.5 6.5,-6.5 h 87.91 v -94.74 c 0,-3.59 2.91,-6.5 6.5,-6.5 h 2.9 V 128.99 H 99.01 l 68.19,118.1 c 0.58,1.01 0.87,2.13 0.87,3.25 0,1.13 -0.29,2.25 -0.87,3.25 l -24.26,42.01 c -1.16,2.02 -3.3,3.25 -5.63,3.25 H 38.19 c -2.32,0 -4.47,-1.23 -5.63,-3.25 L 8.3,253.6 v -0.01 c -1.16,-2.01 -1.16,-4.48 0,-6.5 L 81.25,120.52 c 0,-15.86 12.9,-28.76 28.76,-28.76 H 218.99 V 56 c -7.51,-5.66 -12.38,-14.65 -12.38,-24.76 0,-17.09 13.91,-30.99 31,-30.99 17.09,0 30.99,13.9 30.99,30.99 0,10.11 -4.87,19.1 -12.38,24.76 V 91.76 H 365.2 c 15.86,0 28.76,12.9 28.76,28.76 z M 450.02,243.84 387.46,135.49 324.9,243.84 Z m -16.75,42.01 16.75,-29.01 H 324.9 l 16.75,29.01 z M 94.91,115.99 H 380.3 c -1.95,-6.49 -7.98,-11.23 -15.1,-11.23 H 110.01 c -7.12,0 -13.15,4.74 -15.1,11.23 z m 265.73,345.97 v -13.98 h -7.1 -231.86 -7.1 v 13.98 z m -13.6,-26.98 V 421 h -87.92 -43.03 -87.91 v 13.98 z M 252.62,408 v -88.24 h -2.83 c -0.03,0 -0.05,0.01 -0.07,0.01 h -24.23 c -0.03,0 -0.05,-0.01 -0.07,-0.01 h -2.83 V 408 Z M 255.6,31.24 c 0,-9.92 -8.07,-17.99 -17.99,-17.99 -9.92,0 -18,8.07 -18,17.99 0,9.92 8.08,17.99 18,17.99 9.92,0 17.99,-8.07 17.99,-17.99 z M 243.22,306.76 V 128.99 h -11.23 v 177.77 z m 0,-215 V 61.71 c -1.82,0.34 -3.7,0.52 -5.61,0.52 -1.92,0 -3.8,-0.18 -5.62,-0.52 V 91.76 Z M 150.31,243.84 87.75,135.49 25.19,243.84 Z m -16.75,42.01 16.75,-29.01 H 25.19 l 16.75,29.01 z"
+   id="path2040" />
+
+		</g>
+
+		<g
+   id="g2044">
+		</g>
+
+	</g>
+
+	<path
+   style="fill:#333333"
+   d="m 237.61,37.74 c 1.71,0 3.38,-0.69 4.59,-1.9 1.21,-1.22 1.91,-2.89 1.91,-4.6 0,-1.71 -0.7,-3.38 -1.91,-4.6 -1.21,-1.21 -2.88,-1.9 -4.59,-1.9 -1.71,0 -3.39,0.69 -4.6,1.9 -1.21,1.21 -1.9,2.89 -1.9,4.6 0,1.71 0.69,3.39 1.9,4.6 1.21,1.21 2.89,1.9 4.6,1.9 z"
+   id="path2047" />
+
+	<g
+   id="g2061">
+		<polygon
+   style="fill:#ffffff"
+   points="61.22,285.85 47.25,285.85 58.65,256.84 72.61,256.84 "
+   id="polygon2049" />
+
+		<polygon
+   style="fill:#ffffff"
+   points="83.3,285.85 69.33,285.85 80.73,256.84 94.69,256.84 "
+   id="polygon2051" />
+
+		<polygon
+   style="fill:#ffffff"
+   points="412.91,285.85 398.94,285.85 410.34,256.84 424.3,256.84 "
+   id="polygon2053" />
+
+		<polygon
+   style="fill:#ffffff"
+   points="294,434.98 280.04,434.98 285.53,421 299.49,421 "
+   id="polygon2055" />
+
+		<polygon
+   style="fill:#ffffff"
+   points="313.66,434.98 299.7,434.98 305.19,421 319.15,421 "
+   id="polygon2057" />
+
+		<polygon
+   style="fill:#ffffff"
+   points="166.9,461.96 152.94,461.96 158.43,447.98 172.39,447.98 "
+   id="polygon2059" />
+
+	</g>
+
+</g>
+      <g
+         id="g2065">
+</g>
+      <g
+         id="g2067">
+</g>
+      <g
+         id="g2069">
+</g>
+      <g
+         id="g2071">
+</g>
+      <g
+         id="g2073">
+</g>
+      <g
+         id="g2075">
+</g>
+      <g
+         id="g2077">
+</g>
+      <g
+         id="g2079">
+</g>
+      <g
+         id="g2081">
+</g>
+      <g
+         id="g2083">
+</g>
+      <g
+         id="g2085">
+</g>
+      <g
+         id="g2087">
+</g>
+      <g
+         id="g2089">
+</g>
+      <g
+         id="g2091">
+</g>
+      <g
+         id="g2093">
+</g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:25.4px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583;fill:#ffd040;fill-opacity:1;"
+       x="13.89315"
+       y="68.241333"
+       id="text2143"><tspan
+         sodipodi:role="line"
+         id="tspan2141"
+         x="13.89315"
+         y="68.241333"
+         style="font-size:28.2222px;stroke-width:0.264583;fill:#ffd040;fill-opacity:1;">x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:25.4px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583;fill:#ffd040;fill-opacity:1;"
+       x="94.65934"
+       y="67.547249"
+       id="text2143-1"><tspan
+         sodipodi:role="line"
+         id="tspan2141-5"
+         x="94.65934"
+         y="67.547249"
+         style="font-size:28.2222px;stroke-width:0.264583;fill:#ffd040;fill-opacity:1;">y</tspan></text>
+  </g>
+</svg>
