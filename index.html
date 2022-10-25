@@ -2623,14 +2623,28 @@
               <p>Toute valeur en JavaScript qui n'est <b>pas</b> un <b>string</b>, un <b>nombre</b>, <b>true</b>, <b>false</b>, <b>null</b> ou <b>undefined</b> est un objet</p>
               <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
                 <pre style="margin: 0; line-height: 125%">
-                <span style="color: #0000ff">var</span> myCar = <span style="color: #0000ff">new</span> Object();
-                myCar.make = <span style="color: #a31515">&quot;Ford&quot;</span>;
-                myCar.model = <span style="color: #a31515">&quot;Mustang&quot;</span>;
-                myCar.year = 1969;
+                  <span style="color: #0000ff">var</span> myCar = <span style="color: #0000ff">new</span> Object();
+                  myCar.make = <span style="color: #a31515">&quot;Ford&quot;</span>;
+                  myCar.model = <span style="color: #a31515">&quot;Mustang&quot;</span>;
+                  myCar.year = 1969;
                 </pre>
               </div>
               <img src="image/ford.svg" class="html-css-logo" style="left: 60%; top:56%">
               <img src="image/Ford_Mustang.svg" class="html-css-logo" style="left: 50%; top:75%; width:40%;">
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Programmation orientée objet (POO)
+            </div>
+            <div class="content">
+              <p class="sub-title">
+                Dans la culture de la programmation, on a  une chose appelée la programmation orientée objet, 
+                un ensemble de techniques qui utilisent les objets (et les concepts associés) 
+                comme principe central de l'organisation des programmes.
+              </p>
             </div>
           </div>
 
@@ -2733,6 +2747,96 @@
           <!--slide 46-->
           <div class="slide">
             <div class="heading">
+              Ajout de nouvelles propriétés
+            </div>
+            <div class="content">
+              <p>Vous pouvez ajouter de nouvelles propriétés à un objet existant en lui donnant simplement une valeur. 
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3ykwq8jnd"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Suppression des propriétés
+            </div>
+            <div class="content">
+              <p>Le mot clé delete supprime une propriété d'un objet
+              </p>
+              <iframe
+              frameborder="0"
+              height="85%"  
+              src="https://onecompiler.com/embed/javascript/3ykwqfhfz"
+              width="100%"
+            ></iframe>
+            <p>
+              L'opérateur <b>delete</b> est conçu pour être utilisé sur les propriétés des objets. Il n'a aucun effet sur les variables ou les fonctions. 
+            </p>
+            </div>
+          </div>
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Objets imbriqués
+            </div>
+            <div class="content">
+              <p>Les valeurs d'un objet peuvent être un autre objet
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3ykwqt9j4"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              JSON.stringify()
+            </div>
+            <div class="content">
+              <p>Tout objet JavaScript peut être stringifié (converti en chaîne de caractères) à l'aide de la fonction JavaScript JSON.stringify().
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3ykwr6cee"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Constructeurs d'objets
+            </div>
+            <div class="content">
+              <p>Parfois, nous avons besoin d'un "plan" pour créer plusieurs objets du même "type".
+              La façon de créer un "type d'objet" est d'utiliser une fonction de construction d'objet.
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3ykws6vwa"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
               Object methods
             </div>
             <div class="content">
@@ -2775,7 +2879,110 @@
           <!--slide 46-->
           <div class="slide">
             <div class="heading">
-              Object methods - Un exemple complexe mais meilleur
+              Ajout d'une méthode à un constructeur
+            </div>
+            <div class="content">
+              <p>Votre fonction constructeur peut également définir des méthodes</p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3yky4m7n5"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Constructeurs JavaScript intégrés
+            </div>
+            <div class="content">
+              <p>Votre fonction constructeur peut également définir des méthodes</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">String</span>()    <span style="color: #888888">// A new String object</span>
+                  <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Number</span>()    <span style="color: #888888">// A new Number object</span>
+                  <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Boolean</span>()   <span style="color: #888888">// A new Boolean object</span>
+                  <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Object</span>()    <span style="color: #888888">// A new Object object</span>
+                  <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Array</span>()     <span style="color: #888888">// A new Array object</span>
+                  <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">RegExp</span>()    <span style="color: #888888">// A new RegExp object</span>
+                  <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Function</span>()  <span style="color: #888888">// A new Function object</span>
+                  <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>()      <span style="color: #888888">// A new Date object </span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Constructeurs JavaScript intégrés
+            </div>
+            <div class="content">
+              <p>
+                JavaScript dispose de versions objet des types de données primitifs String, Number et Boolean. 
+                Mais il n'y a (presque) aucune raison de créer des objets complexes. Les valeurs primitives sont beaucoup plus rapides :
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                Utiliser les littéraux de chaîne <span style="background-color: #fff0f0">&quot;&quot;</span> au lieu de <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">String</span>().
+
+                Utilisez les littéraux de nombres <span style="color: #0000DD; font-weight: bold">50</span> au lieu de <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Number</span>().
+
+                Utiliser les littéraux booléens <span style="color: #008800; font-weight: bold">true</span> <span style="color: #333333">/</span> <span style="color: #008800; font-weight: bold">false</span> au lieu de <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Boolean</span>().
+
+                Utiliser les littéraux d&#39;objet {} au lieu de <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Object</span>().
+
+                Utiliser les littéraux de tableau [] au lieu de <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Array</span>().
+
+                Utiliser les littéraux de motif <span style="color: #333333">/</span>()<span style="color: #333333">/</span> au lieu de <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">RegExp</span>().
+
+                Utiliser les expressions de fonctions () {} au lieu de <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Function</span>().</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              AutoBoxing
+            </div>
+            <div class="content">
+              <p>
+                Le boxing consiste à envelopper une valeur primitive dans un objet. 
+                Lorsque vous traitez un type primitif comme s'il s'agissait d'un objet, 
+                par exemple en faisant appel à la fonction toLowerCase, JavaScript englobe le type primitif dans l'objet correspondant.
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3yky63kt7"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Prototypes
+            </div>
+            <div class="content">
+              <p>En plus de leur ensemble de propriétés, la plupart des objets ont également un prototype</p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3yg3me5pe"
+              width="100%"
+            ></iframe>
+            <img src="image/warning.svg" class="html-css-logo" style="left: 70%; top:63%; height:32%">
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Object methods - Un exemple complexe mais meilleur (Class)
             </div>
             <div class="content">
               <p>Les classes sont un moyen particulier de créer des objets.</p>
@@ -2788,6 +2995,35 @@
             <img src="image/warning.svg" class="html-css-logo" style="left: 70%; top:63%; height:32%">
             </div>
           </div>
+          
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Class
+            </div>
+            <div class="content">
+              <p class="sub-title">
+                Le système de prototypes de JavaScript peut être interprété comme une version quelque peu informelle 
+                d'un concept orienté objet appelé classes. 
+                Une classe définit la forme d'un type d'objet - quelles méthodes et propriétés il possède.
+                Un tel objet est appelé une instance de la classe.
+              </p>
+            </div>
+          </div>
+
+              
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Pour ceux qui sont en avance
+            </div>
+            <div class="content">
+              <p class="sub-title">
+                <a href="https://github.com/euZebe/clean-code-javascript-fr">https://github.com/euZebe/clean-code-javascript-fr</a>
+              </p>
+            </div>
+          </div>      
 
           <div class="slide">
             <div class="heading">
@@ -2797,7 +3033,7 @@
         </section>
 
         <section class="counter">
-          <input type="number" id="index" name="index" min="1" max="115" value="1" style="width:20%"> of 115
+          <input type="number" id="index" name="index" min="1" max="115" value="1" style="width:40%"> of 115
         </section>
 
         <section class="navigation">
