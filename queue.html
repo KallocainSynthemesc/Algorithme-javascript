@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/queue.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1 id="title">Queueing.</h1>
+    <section id="buttonbox"><span id="click">Click here &rarr;</span>
+      <button id="enqueue"><span>Ajouter un client</span>
+        <div id="number">1</div>
+      </button>
+      <button id="dequeue"> <span>Servir le client</span></button>
+    </section>
+    <div id="priority"><span>priority</span>
+      <div id="n">n =</div>
+      <input value="1"/>
+    </div>
+    <section id="content">
+      <div id="stage">
+        <div class="pointer" id="head">head</div>
+        <div class="pointer" id="tail">tail</div>
+        <div id="platform"></div>
+      </div>
+      <p id="out">&nbsp;</p>
+      <p id="description">A demonstration of FIFO queuing.</p>
+    </section>
+    <script type="text/text" id="document">
+      Imaginez le <i>boutique de l´école</i>,
+      juste au moment où la cloche sonne la pause..
+      
+      Un étudiant arrive, le premier;
+      ils achètent quelque chose dans le magasin.
+      
+      Cela prend du temps.
+      Pendant ce temps, un autre étudiant apparaît,
+      et se tient directement derrière lui.
+      
+      Cet élève ne peut pas encore être servi,
+      jusqu'à ce que l'élève de devant ait quitté l'atelier,
+      après avoir reçu leur article.
+      Il est la <i>tête</i> de la file d'attente.
+      
+      Le premier élève part,
+      permettant au second de prendre sa place.
+      
+      C'est la base du <i>FIFO</i>.
+      First In is First Out. (Le premier arrivé est le premier sorti.)
+      
+      Dans une file d'attente en informatique,
+      "Ajouter un client"
+      devient "Enqueue".
+      "Servir le client"
+      devient "Dequeue".
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/queue.js" type="text/javascript"></script>
+    
+</body>
+
+</html>

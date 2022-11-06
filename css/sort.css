@@ -1,0 +1,139 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+* {
+  font-family: 'Questrial', sans-serif;
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  background-color: #302E2E;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  height: 38px;
+  margin: 1%;
+}
+
+#list {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#list div{
+  background-color: rgb(70,70,70);
+  width: 200px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+}
+#list div h2{
+  font-size: 20px;
+  margin: 0;
+}
+
+.dropdown {
+  width: 200px;
+  position: relative;
+  z-index: 5;
+  margin: 0 10px;
+}
+#dropdownBtnSort, #dropdownBtnFilter {
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #302E2E;
+  color: white;
+  position: relative;
+  --active-col: #302E2E;
+}
+#dropdownBtnSort i, #dropdownBtnFilter i {
+  float: right;
+  transform: rotate(0deg);
+}
+
+#dropdownBtnSort::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: calc(100% - 20px);
+  background-color: var(--active-sort-col);
+  left: 10px;
+  top: 2px;
+}
+
+#dropdownBtnFilter::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: calc(100% - 20px);
+  background-color: var(--active-filter-col);
+  left: 10px;
+  top: 2px;
+}
+
+#dropdownSortOptions, #dropdownFilterOptions {
+  display: none;
+  background-color: #302E2E;
+  flex-direction: column;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+#dropdownFilterOptions {
+  display: none;
+  background-color: #302E2E;
+  flex-direction: column;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+.sortOption, .filterOption {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+.sortOption span, .filterOption span {
+ float: right;
+}
+
+.sortOption:hover, .filterOption:hover {
+  background-color: #6E6E6E;
+}
+
+.selected {
+  position: relative;
+  color: #F5B32F;
+}
+.selected::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: calc(100% - 20px);
+  background-color: #F5B32F;
+  left: 10px;
+  bottom: 7px;
+}
+
+#clearBtn {
+  height: 38.5px;
+  padding: 0 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #302E2E;
+  color: white;
+  margin-left: 20px;
+}
+

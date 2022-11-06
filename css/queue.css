@@ -1,0 +1,123 @@
+body {
+  font-family: Lato, sans-serif;
+  color: black;
+  padding: 1em;
+}
+
+h1#title {
+  display: inline;
+}
+
+div#priority {
+  display: none;
+  float: right;
+  padding: 0.6em;
+}
+
+div#n {
+  font-family: serif;
+  font-style: italic;
+  display: inline-block;
+}
+
+div#priority input {
+  display: inline-block;
+  width: 1.5em;
+  border: none;
+  text-align: center;
+  margin-bottom: 0.1em;
+}
+
+#buttonbox {
+  float: right;
+}
+
+#click {
+  margin-right: 1em;
+  display: none;
+}
+
+button {
+  background-color: #f7df1eff;
+  border: none;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  color: black;
+  box-shadow: 0 5px black;
+  margin: 0.2em;
+  width: 17em;
+}
+
+button:active {
+  box-shadow: 0 3px black;
+  background-color: #555;
+}
+
+button:disabled {
+  color: black;
+  background-color: #444;
+}
+
+div#number {
+  display: inline-block;
+  
+  width: 1em;
+  height: 1em;
+  
+  background-color: #f7df1eff;
+}
+
+section#content {
+  text-align: center;
+  margin-top: 1em;
+}
+
+div#stage {
+  position: relative;
+  text-align: left;
+  width: 400px;
+  margin: 2em auto;
+}
+
+div.pointer {
+  margin: 0.2em;
+  display: inline-block;
+  position: absolute;
+  text-size: 10px;
+  width: 2.5em;
+  text-align: center;
+}
+
+div#platform {
+  padding-top: 2em;
+  min-height: 4em;
+}
+
+div.block {
+  display: inline-block;
+  
+  background-color: #5053ff;
+  
+  width: 2.5em;
+  height: 2.5em;
+  padding: auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.5em;
+  margin: 0.2em;
+  
+  selection: none;
+}
+
+section#script {
+  display: none;
+}
+
+div#out {
+  font-family: monospace;
+}
+
+#description{
+  font-size: 2rem;
+  margin:0;
+}

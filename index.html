@@ -2637,20 +2637,6 @@
           <!--slide 46-->
           <div class="slide">
             <div class="heading">
-              Programmation orientée objet (POO)
-            </div>
-            <div class="content">
-              <p class="sub-title">
-                Dans la culture de la programmation, on a  une chose appelée la programmation orientée objet, 
-                un ensemble de techniques qui utilisent les objets (et les concepts associés) 
-                comme principe central de l'organisation des programmes.
-              </p>
-            </div>
-          </div>
-
-          <!--slide 46-->
-          <div class="slide">
-            <div class="heading">
               Objects
             </div>
             <div class="content">
@@ -2798,23 +2784,6 @@
             ></iframe>
             </div>
           </div>
-
-          <!--slide 46-->
-          <div class="slide">
-            <div class="heading">
-              JSON.stringify()
-            </div>
-            <div class="content">
-              <p>Tout objet JavaScript peut être stringifié (converti en chaîne de caractères) à l'aide de la fonction JavaScript JSON.stringify().
-              </p>
-              <iframe
-              frameborder="0"
-              height="95%"  
-              src="https://onecompiler.com/embed/javascript/3ykwr6cee"
-              width="100%"
-            ></iframe>
-            </div>
-          </div>
           
           <!--slide 46-->
           <div class="slide">
@@ -2829,6 +2798,7 @@
                 <li>Seul, <b>this</b> fait référence à l'objet global.</li>
                 <li>Dans une fonction, <b>this</b> fait référence à l'objet global.</li>
               </ul>
+              <br>
               <p>Il existe d'autres règles pour <b>this</b>, mais pour l'instant je ne veux pas entrer dans les détails.</p>
             </div>
           </div>
@@ -2930,7 +2900,7 @@
               Constructeurs JavaScript intégrés
             </div>
             <div class="content">
-              <p>Votre fonction constructeur peut également définir des méthodes</p>
+              <p>Objets /constructeurs javascript intégrés</p>
               <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
                 <pre style="margin: 0; line-height: 125%">
                   <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">String</span>()    <span style="color: #888888">// A new String object</span>
@@ -2993,52 +2963,1692 @@
             ></iframe>
             </div>
           </div>
+        
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code
+            </div>
+            <div class="content">
+              <p class="sub-title">
+                Principes d'ingénierie logicielle, de l'ouvrage de Robert C. Martin Clean Code, adapté pour JavaScript
+              </p>
+            </div>
+          </div>  
 
           <!--slide 46-->
           <div class="slide">
             <div class="heading">
-              Object methods - Class
+              Clean Code - Noms de variables
             </div>
             <div class="content">
-              <p>Les classes sont un moyen particulier de créer des objets.</p>
+              <p><b>Évitez les noms à une seule lettre</b></p>
+              <br>
+              <p>Mal:</p>
+              <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">let</span> n <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;Kilian&#39;</span>;</pre></div>
+              <br>
+              <p>Bien:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">let</span> nom <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;Kilian&#39;</span></pre></div>
+              <br>
+              <p>
+                Une exception est bien sûr un compteur d'index
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #008800; font-weight: bold">let</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> cars.length; i<span style="color: #333333">++</span>) {
+                  console.log(i);
+                } </pre>
+              </div>
+
+            </div>
+          </div> 
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p><b>Utilisez des noms de variables significatifs et prononçables</b></p>
+              <br>
+              <p>Mal:</p>
+              <!-- HTML generated using hilite.me --><div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">const</span> yyyymmdstr <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>().toISOString().slice(<span style="color: #0000DD; font-weight: bold">0</span>, <span style="color: #0000DD; font-weight: bold">10</span>);</pre></div>
+              <br>
+              <p>Bien:</p>
+              <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">const</span> dateActuelle <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>().toISOString().slice(<span style="color: #0000DD; font-weight: bold">0</span>, <span style="color: #0000DD; font-weight: bold">10</span>);</pre></div>
+            </div>
+          </div> 
+          
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p><b>Évitez les acronymes, sauf s'ils sont extrêmement connus.</b></p>
+              <br>
+              <p>Mal:</p>
+              <!-- HTML generated using hilite.me --><div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">let</span> fmt <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;YYYY-MM-DD&#39;</span>;</pre></div>
+              <br>
+              <p>Bien:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">let</span> dateFormat <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;YYYY-MM-DD&#39;</span>;</pre></div>
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p><b>Évitez les abréviations lors de la création de variables</b></p>
+              <br>
+              <p>Mal:</p>
+              <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">let</span> cat <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;Niveau 5 category&#39;</span>; <span style="color: #888888">//cat ou category??</span></pre></div>
+              <br>
+              <p>Bien:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">let</span> category <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;Niveau 5 category&#39;</span>;</pre></div>
+              <img src="image/catOrCategory.svg" class="html-css-logo" style="left: 60%; top:25%; height:60%">
+            </div>
+          </div> 
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p><b>Évitez les chiffres dans les noms.</b></p>
+              <br>
+              <p>Mal:</p>
+              <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">let</span> l84work <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">true</span>;</pre></div>
+              <br>
+              <p>Bien:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">let</span> lateForWork <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">true</span>;</pre></div>
+            </div>
+            <img src="image/tocool.svg" class="html-css-logo" style="left: 55%; top:20%; height:30%; width:30%">
+            <img src="image/ulate.svg" class="html-css-logo" style="left: 40%; top:55%; height:30%; width:40%">
+            <img src="image/ademain.svg" class="html-css-logo" style="left: 65%; top:50%; height:25%; width:30%">
+          </div> 
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p>
+                Pouvez-vous donner de meilleurs noms à ces variables ?
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3ymkq36cu"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p>
+                Qu'est-ce que cela signifie, et pouvez-vous être plus clair ?
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3ymkrwsja"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p><b>Utilisez des noms interrogeables et explicatives</b></p>
+              <br>
+              <p>Mal:</p>
+              <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #888888">// Qu&#39;est-ce que c&#39;est que 86400000?</span>
+                  setTimeout(misAFeu, <span style="color: #0000DD; font-weight: bold">86400000</span>);</pre>
+              </div>
+              <br>
+              <p>Bien:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #888888">// Déclarez-les comme des constantes nommées capitalisées.</span>
+                  <span style="color: #008800; font-weight: bold">const</span> MILLISECONDES_PAR_JOUR <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">86400000</span>;
+
+                  setTimeout(misAFeu, MILLISECONDES_PAR_JOUR);</pre>
+              </div>
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p>
+                Je veux calculer l'aire du cercle, mais j'ai l'impression que mon code n'est pas très clair. Pouvez-vous le modifier ?
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3ymksz5sw"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p><b>Éviter la cartographie mentale</b></p>
+              <br>
+              <p>Mal:</p>
+              <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> endroits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Austin&quot;</span>, <span style="background-color: #fff0f0">&quot;New York&quot;</span>, <span style="background-color: #fff0f0">&quot;San Francisco&quot;</span>];
+                  <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #008800; font-weight: bold">let</span> e of endroits){
+                    console.log(e); <span style="color: #888888">//que signifie &quot;e&quot; ici</span>
+                  }
+
+                  <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #008800; font-weight: bold">let</span> e <span style="color: #008800; font-weight: bold">in</span> endroits){
+                    console.log(e) <span style="color: #888888">//et qu&#39;est-ce que &quot;e&quot; ici</span>
+                  }</pre>
+              </div>
+              <img src="image/mentalMap.svg" class="html-css-logo" style="left: 55%; top:45%; height:50%; width:40%">
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p><b>Éviter la cartographie mentale</b></p>
+              <p>Bien:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> endroits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Austin&quot;</span>, <span style="background-color: #fff0f0">&quot;New York&quot;</span>, <span style="background-color: #fff0f0">&quot;San Francisco&quot;</span>];
+                  <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #008800; font-weight: bold">let</span> endroit of endroits){
+                    console.log(endroit); <span style="color: #888888">//endroit est plus claire ce que la variable représente</span>
+                  }
+
+                  <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #008800; font-weight: bold">let</span> index <span style="color: #008800; font-weight: bold">in</span> endroits){
+                    <span style="color: #888888">//un simple &quot;i&quot; serait également acceptable car il est bien connu dans la communauté des développeurs.</span>
+                    console.log(index)
+                  }</pre>
+              </div>
+            </div>
+          </div> 
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p>
+                Existe-t-il un meilleur nom de variable à la place de x ??
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3ymnjdwwg"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p><b>Ne pas ajouter de contexte inutile</b></p>
+              <p>Mal:</p>
+              <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> Voiture <span style="color: #333333">=</span> {
+                    marqueDeVoiture<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Honda&quot;</span>,
+                    modeleDeVoiture<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Accord&quot;</span>,
+                    couleurDeVoiture<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Bleue&quot;</span>
+                  };
+
+                  <span style="color: #008800; font-weight: bold">function</span> peindreLaVoiture(voiture) {
+                    voiture.couleurDeVoiture <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Rouge&quot;</span>;
+                  }</pre>
+              </div>
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p><b>Ne pas ajouter de contexte inutile</b></p>
+              <p>Bien:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> Voiture <span style="color: #333333">=</span> {
+                    marque<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Honda&quot;</span>,
+                    modele<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Accord&quot;</span>,
+                    couleur<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Bleue&quot;</span>
+                  };
+
+                  <span style="color: #008800; font-weight: bold">function</span> peindreLaVoiture(voiture) {
+                    voiture.couleur <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Rouge&quot;</span>;
+                  }</pre>
+              </div>
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p>
+                Puis-je raccourcir les noms d'attributs dans un objet ?
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3ymnkmzd4"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Functions
+            </div>
+            <div class="content">
+              <p><b>Arguments de fonction (idéalement 2 ou moins)</b></p>
+              <p>Habituellement, si vous avez plus de deux arguments, votre fonction essaie de faire trop. 
+                Dans les cas où il n'est pas, la plupart du temps un objet de niveau supérieur suffira en tant que argument.</p>
+              <p>Mal:</p>
+              <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">let</span> titre <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;un titre&quot;</span>;
+                  <span style="color: #008800; font-weight: bold">let</span> corps <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;contenu du corps&quot;</span>;
+                  <span style="color: #008800; font-weight: bold">let</span> boutonTexte <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Click here&quot;</span>;
+                  <span style="color: #008800; font-weight: bold">let</span> annulable <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">true</span>;
+                  <span style="color: #008800; font-weight: bold">function</span> creerUnMenu(titre, corps, boutonTexte, annulable) {
+                    <span style="color: #888888">// ...</span>
+                  }
+                  creerUnMenu(titre,corps,boutonTexte,annulable);</pre>
+              </div>
+              <img src="image/peace.svg" class="html-css-logo" style="left: 60%; top:45%; height:50%; width:40%">
+            </div>
+          </div>  
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Functions
+            </div>
+            <div class="content">
+              <p><b>Arguments de fonction (idéalement 2 ou moins)</b></p>
+              <p>Habituellement, si vous avez plus de deux arguments, votre fonction essaie de faire trop. 
+                Dans les cas où il n'est pas, la plupart du temps un objet de niveau supérieur suffira en tant que argument.</p>
+              <p>Bien:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">let</span> menu <span style="color: #333333">=</span> {
+                    titre<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;un titre&quot;</span>,
+                    corps<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;contenu du corps&quot;</span>,
+                    boutonTexte<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Click here&quot;</span>,
+                    annulable<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">true</span>
+                  };
+
+                  <span style="color: #008800; font-weight: bold">function</span> creerUnMenu({ titre, corps, boutonTexte, annulable }) {
+                    <span style="color: #888888">// ...</span>
+                  }
+                  creerUnMenu(menu);</pre>
+              </div>
+              <img src="image/peace.svg" class="html-css-logo" style="left: 60%; top:45%; height:50%; width:40%">
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Functions
+            </div>
+            <div class="content">
+              <p><b>Les fonctions doivent faire une chose</b> (si possible)</p>
+              <p>Mal:</p>
+              <div style="overflow-y: scroll; height:85%">
+                <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">var</span> array <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Manish&quot;</span>,<span style="background-color: #fff0f0">&quot;Chandan&quot;</span>,<span style="background-color: #fff0f0">&quot;Piyush&quot;</span>,<span style="background-color: #fff0f0">&quot;Sunil&quot;</span>,<span style="background-color: #fff0f0">&quot;Pankaj&quot;</span>,<span style="background-color: #fff0f0">&quot;Piyush&quot;</span>,<span style="background-color: #fff0f0">&quot;Pankaj&quot;</span>,<span style="background-color: #fff0f0">&quot;Tiny&quot;</span>,<span style="background-color: #fff0f0">&quot;Chandan&quot;</span>,<span style="background-color: #fff0f0">&quot;Manish&quot;</span>];
+
+                    <span style="color: #008800; font-weight: bold">function</span> removeDuplicates(array){
+                      <span style="color: #008800; font-weight: bold">let</span> storage <span style="color: #333333">=</span> [array[<span style="color: #0000DD; font-weight: bold">0</span>]];
+                      <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #008800; font-weight: bold">let</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>; i <span style="color: #333333">&lt;</span> array.length; i<span style="color: #333333">++</span>){
+                        <span style="color: #008800; font-weight: bold">let</span> contains <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">false</span>;
+                        <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #008800; font-weight: bold">let</span> item of storage){
+                          <span style="color: #008800; font-weight: bold">if</span>(array[i] <span style="color: #333333">===</span> item){
+                            contains <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">true</span>;
+                          }
+                        }
+                        <span style="color: #008800; font-weight: bold">if</span>(contains <span style="color: #333333">===</span> <span style="color: #008800; font-weight: bold">false</span>){
+                          storage[storage.length] <span style="color: #333333">=</span> array[i];
+                        }
+                      }
+                      <span style="color: #008800; font-weight: bold">return</span> storage;
+                    }    
+
+                    console.log(removeDuplicates(array));</pre>
+                </div>
+
+              </div>
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Functions
+            </div>
+            <div class="content">
+              <p><b>Les fonctions doivent faire une chose</b> (si possible)</p>
+              <p>Bien:</p>
+              <div style="overflow-y: scroll; height:85%">
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #000080; font-weight: bold">var</span> array = [<span style="color: #0000FF">&quot;Manish&quot;</span>,<span style="color: #0000FF">&quot;Chandan&quot;</span>,<span style="color: #0000FF">&quot;Piyush&quot;</span>,<span style="color: #0000FF">&quot;Sunil&quot;</span>,<span style="color: #0000FF">&quot;Pankaj&quot;</span>,<span style="color: #0000FF">&quot;Piyush&quot;</span>,<span style="color: #0000FF">&quot;Pankaj&quot;</span>,<span style="color: #0000FF">&quot;Tiny&quot;</span>,<span style="color: #0000FF">&quot;Chandan&quot;</span>,<span style="color: #0000FF">&quot;Manish&quot;</span>];
+
+                    <span style="color: #000080; font-weight: bold">function</span> removeDuplicates(array){
+                      <span style="color: #000080; font-weight: bold">let</span> storage = [array[<span style="color: #0000FF">0</span>]];
+                      <span style="color: #000080; font-weight: bold">for</span>(<span style="color: #000080; font-weight: bold">let</span> i = <span style="color: #0000FF">1</span>; i &lt; array.length; i++){
+                        <span style="color: #000080; font-weight: bold">if</span>(contains(array[i], storage) === <span style="color: #000080; font-weight: bold">false</span>){
+                          storage[storage.length] = array[i];
+                        }
+                      }
+                      <span style="color: #000080; font-weight: bold">return</span> storage;
+                    }    
+
+                    <span style="color: #000080; font-weight: bold">function</span> contains(elem, arr){
+                      <span style="color: #000080; font-weight: bold">for</span>(<span style="color: #000080; font-weight: bold">let</span> item of arr){
+                        <span style="color: #000080; font-weight: bold">if</span>(elem === item){
+                          <span style="color: #000080; font-weight: bold">return</span> <span style="color: #000080; font-weight: bold">true</span>;
+                        }
+                      }
+                      <span style="color: #000080; font-weight: bold">return</span> <span style="color: #000080; font-weight: bold">false</span>;
+                    }
+
+                    console.log(removeDuplicates(array));</pre>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Functions
+            </div>
+            <div class="content">
+              <p><b>Les noms de fonction doivent dire ce qu'ils font</b></p>
+              <p>Mal:</p>
+              <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">function</span> ajouterÀLaDate(date, mois) {
+                    <span style="color: #008800; font-weight: bold">return</span> newDate <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>(date.setMonth(date.getMonth()<span style="color: #333333">+</span>mois));
+                  }
+
+                  <span style="color: #008800; font-weight: bold">const</span> date <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>();
+
+                  <span style="color: #888888">// Il est difficile de dire à partir du nom de la fonction ce qui est ajouté</span>
+                  ajouterÀLaDate(date, <span style="color: #0000DD; font-weight: bold">1</span>);</pre>
+              </div>
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Functions
+            </div>
+            <div class="content">
+              <p><b>Les noms de fonction doivent dire ce qu'ils font</b></p>
+              <p>Bien:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">function</span> ajouterMoisADate(mois, date) {
+                    <span style="color: #008800; font-weight: bold">return</span> newDate <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>(date.setMonth(date.getMonth()<span style="color: #333333">+</span>mois));
+                  }
+
+                  <span style="color: #008800; font-weight: bold">const</span> date <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>();
+                  ajouterMoisADate(<span style="color: #0000DD; font-weight: bold">1</span>, date);</pre>
+              </div>
+            </div>
+          </div> 
+     
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Functions
+            </div>
+            <div class="content">
+              <p><b>Refactoriser le code dupliqué</b></p>
+              <p>Mal:</p>
+              <div style="overflow-y: scroll; height:85%">
+                <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">function</span> afficherLaListeDesDéveloppeurs(developpeurs) {
+                      <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #008800; font-weight: bold">let</span> developpeur of developpeurs){
+                        <span style="color: #008800; font-weight: bold">const</span> salairePrevu <span style="color: #333333">=</span> developpeur.calculerSalairePrévu();
+                        <span style="color: #008800; font-weight: bold">const</span> experience <span style="color: #333333">=</span> developpeur.obtenirExpérience();
+                        <span style="color: #008800; font-weight: bold">const</span> lienGithub <span style="color: #333333">=</span> developpeur.obtenirLienGithub();
+                        <span style="color: #008800; font-weight: bold">const</span> donnes <span style="color: #333333">=</span> {
+                          salairePrevu,
+                          experience,
+                          lienGithub
+                        };
+                        <span style="color: #008800; font-weight: bold">return</span> donnes;
+                      }
+                    }
+
+                    <span style="color: #008800; font-weight: bold">function</span> afficherLaListeDesGestionnaires(gestionnaires) {
+                      <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #008800; font-weight: bold">let</span> gestionnaire of gestionnaires){
+                        <span style="color: #008800; font-weight: bold">const</span> salairePrevu <span style="color: #333333">=</span> gestionnaire.calculerSalairePrévu();
+                        <span style="color: #008800; font-weight: bold">const</span> experience <span style="color: #333333">=</span> gestionnaire.obtenirExpérience();
+                        <span style="color: #008800; font-weight: bold">const</span> portfolio  <span style="color: #333333">=</span> gestionnaire.obtenireProjetsMBA();
+                        <span style="color: #008800; font-weight: bold">const</span> donnes <span style="color: #333333">=</span> {
+                          salairePrevu,
+                          experience,
+                          portfolio 
+                        };
+                        <span style="color: #008800; font-weight: bold">return</span> donnes;
+                      }
+                    }</pre>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Functions
+            </div>
+            <div class="content">
+              <p><b>Refactoriser le code dupliqué</b></p>
+              <p>Bien:</p>
+              <div style="overflow-y: scroll; height:85%">
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">function</span> afficherLaListeDesEmployes(employes) {
+                      <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #008800; font-weight: bold">let</span> employe of employes){
+                        <span style="color: #008800; font-weight: bold">const</span> salairePrevu <span style="color: #333333">=</span> employe.calculerSalairePrevu();
+                        <span style="color: #008800; font-weight: bold">const</span> experience <span style="color: #333333">=</span> employe.obtenirExperience();
+                        <span style="color: #008800; font-weight: bold">const</span> donnes <span style="color: #333333">=</span> {
+                          salairePrevu,
+                          experience
+                        };
+
+                        <span style="color: #008800; font-weight: bold">switch</span> (employe.type) {
+                          <span style="color: #008800; font-weight: bold">case</span> <span style="background-color: #fff0f0">&quot;gestionnaire&quot;</span><span style="color: #333333">:</span>
+                            donnes.portfolio <span style="color: #333333">=</span> employe.obtenireProjetsMBA();
+                            <span style="color: #008800; font-weight: bold">break</span>;
+                          <span style="color: #008800; font-weight: bold">case</span> <span style="background-color: #fff0f0">&quot;développeur&quot;</span><span style="color: #333333">:</span>
+                            donnes.lienGithub <span style="color: #333333">=</span> employe.obtenirLienGithub();
+                            <span style="color: #008800; font-weight: bold">break</span>;
+                        }
+
+                        <span style="color: #008800; font-weight: bold">return</span> donnes;
+                      }
+                    }</pre>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Functions
+            </div>
+            <div class="content">
+              <p><b>Ne pas utiliser les drapeaux comme paramètres de fonction</b></p>
+              <p>Mal:</p>
+              <div style="background: #ffc5c5; overflow:auto;width:auto;border:solid #4a0000;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">function</span> créerUnFichier(nom, temp) {
+                    <span style="color: #008800; font-weight: bold">if</span> (temp) {
+                      fs.create(`.<span style="color: #333333">/</span>temp<span style="color: #333333">/</span>${nom}`);
+                    } <span style="color: #008800; font-weight: bold">else</span> {
+                      fs.create(nom);
+                    }
+                  }</pre>
+              </div>
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Functions
+            </div>
+            <div class="content">
+              <p><b>Ne pas utiliser les drapeaux comme paramètres de fonction</b></p>
+              <p>Bien:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">function</span> créerUnFichier(nom) {
+                    fs.create(nom);
+                  }
+
+                  <span style="color: #008800; font-weight: bold">function</span> créerUnFichierTemp(nom) {
+                    créerUnFichier(`.<span style="color: #333333">/</span>temp<span style="color: #333333">/</span>${nom}`);
+                  }
+                  </pre>
+              </div>
+            </div>
+          </div> 
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Clean Code - Noms de variables
+            </div>
+            <div class="content">
+              <p>
+                Puis-je retravailler le code pour qu'il fonctionne sans drapeau ?
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3ymnmpdf4"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Strings revisités
+            </div>
+            <div class="content">
+              <p>
+                Puisque nous comprenons maintenant comment les objets fonctionnent, nous pouvons examiner certaines méthodes par défaut disponibles 
+                pour différents types. Le premier type que je veux montrer est strings.
+              </p>
+              <p>
+                Avant cela, un bref rappel de ce qu'est un String :
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  let carName1 <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Volvo XC60&quot;</span>;
+                  let carName2 <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;Volvo XC60&#39;</span>;</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Strings revisités - indludes()
+            </div>
+            <div class="content">
+              <p>
+                La méthode includes() renvoie true si une chaîne contient une chaîne spécifiée. Sinon, elle renvoie false.
+              </p>
+              <p><b>Syntax:</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">string<span style="color: #333333">.</span>includes(searchvalue, start)</pre></div>
+              <br>
+              <p>Vérifie si une chaîne de caractères comprend "monde":</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">let</span> text <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Bonjour le monde, bienvenue dans l&#39;univers.&quot;</span>;
+                  <span style="color: #008800; font-weight: bold">let</span> result <span style="color: #333333">=</span> text.includes(<span style="background-color: #fff0f0">&quot;monde&quot;</span>);</pre>
+              </div>
+              <br>
+              <p>Commencez à la position 12 :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">let</span> text <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Bonjour le monde, bienvenue dans l&#39;univers.&quot;</span>;
+                  <span style="color: #008800; font-weight: bold">let</span> result <span style="color: #333333">=</span> text.includes(<span style="background-color: #fff0f0">&quot;monde&quot;</span>, <span style="color: #0000DD; font-weight: bold">12</span>);</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Strings revisités - indludes()
+            </div>
+            <div class="content">
+              <p>
+                Je veux compter toutes les occurrences de "eau" dans ma liste de mots. Pouvez-vous finir ma fonction en utilisant la méthode includes() de String?
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3ymp3h5zq"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Strings revisités - length
+            </div>
+            <div class="content">
+              <p>
+                La propriété length renvoie la longueur d'une chaîne de caractères. La propriété length d'une chaîne vide est 0.
+              </p>
+              <p>C'est la même chose qu'avec un tableau car, en interne, une String est un tableau de caractères (lettres).</p>
+              <br>
+              <p>Exemple:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                <span style="color: #008800; font-weight: bold">let</span> text <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Hello World!&quot;</span>;
+                <span style="color: #008800; font-weight: bold">let</span> length <span style="color: #333333">=</span> text.length;
+                <span style="color: #008800; font-weight: bold">let</span> lettreH <span style="color: #333333">=</span> text[<span style="color: #0000DD; font-weight: bold">0</span>];
+                console.log(length)
+                console.log(lettreH)</pre>
+              </div>
+
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Strings revisités - length
+            </div>
+            <div class="content">
+              <p>
+                J'ai un tableau de plusieurs longs mots français. Je veux trouver le mot le plus long dans mon tableau en utilisant l'attribut length.
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3ymp62e9k"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Strings revisités - split()
+            </div>
+            <div class="content">
+              <p>
+                La méthode split() divise une chaîne de caractères en un tableau de sous-chaînes.
+              </p>
+              <br>
+              <p>Syntax:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">string.split(separator, limit)</pre></div>
+              <br>
+              <p>Exemple:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">let</span> text <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Comment ça va aujourd&#39;hui ?&quot;</span>;
+                  <span style="color: #008800; font-weight: bold">let</span> words <span style="color: #333333">=</span> text.split(<span style="background-color: #fff0f0">&quot; &quot;</span>);
+                  <span style="color: #008800; font-weight: bold">let</span> word <span style="color: #333333">=</span> words[<span style="color: #0000DD; font-weight: bold">1</span>];
+                  console.log(word);
+                  words <span style="color: #333333">=</span> text.split(<span style="background-color: #fff0f0">&quot; &quot;</span>, <span style="color: #0000DD; font-weight: bold">3</span>);
+                  console.log(words)</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Strings revisités - toLowerCase() / toUpperCase()
+            </div>
+            <div class="content">
+              <p>
+                La méthode <b>toLowerCase()</b> convertit une chaîne de caractères en lettres <b>minuscules</b>.
+                La méthode <b>toUpperCase()</b> convertit une chaîne de caractères en lettres <b>majuscules</b>.
+              </p>
+              <br>
+              <p>Exemple:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">let</span> text <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Hello World!&quot;</span>;
+                  <span style="color: #008800; font-weight: bold">let</span> result <span style="color: #333333">=</span> text.toUpperCase(); 
+                  console.log(result); <span style="color: #888888">//HELLO WORLD!</span>
+                  result <span style="color: #333333">=</span> text.toLowerCase();
+                  console.log(result); <span style="color: #888888">//hello world!</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Strings revisités - toLowerCase() / toUpperCase()
+            </div>
+            <div class="content">
+              <p>
+                Nous utilisons souvent les fonctions toUpperCase() et toLowerCase() pour valider les entrées des utilisateurs. 
+                Comme la comparaison est sensible à la casse, il suffit de changer la saisie en majuscule ou en minuscule et de ne comparer que le contenu de la chaîne.
+              </p>
+              <iframe
+              frameborder="0"
+              height="85%"  
+              src="https://onecompiler.com/embed/javascript/3ympmptvt"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Strings revisités - function
+            </div>
+            <div class="content">
+              <p>
+                Il existe de nombreuses autres méthodes/functions disponibles sur Strings. 
+                Je ne les expliquerai pas toutes, parce que beaucoup de méthodes sont très spécialisées et que vous ne les utiliserez pas très souvent.
+              </p>
+              <p>Voici un lien qui présente une liste de toutes ces fonctions et les explique en détail.</p>
+              <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String#propri%C3%A9t%C3%A9s_des_instances">Javascript - String</a>
+            </div>
+          </div>
+
+          <!--slide 44-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités
+            </div>
+            <div class="content">
+              <iframe id="arrayVisualizer2" src="arrayVisualizer.html" width="100%" height="105%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - push()
+            </div>
+            <div class="content">
+              <p>
+                La méthode <b>push()</b> ajoute de nouveaux éléments à la fin d'un tableau.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> fruits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="background-color: #fff0f0">&quot;Orange&quot;</span>, <span style="background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="background-color: #fff0f0">&quot;Mango&quot;</span>];
+                  fruits.push(<span style="background-color: #fff0f0">&quot;Kiwi&quot;</span>);
+                  console.log(fruits);
+                  fruits.push(<span style="background-color: #fff0f0">&quot;Strawberry&quot;</span>, <span style="background-color: #fff0f0">&quot;Lemon&quot;</span>); 
+                  console.log(fruits);
+
+                  <span style="color: #888888">// est la même chose que</span>
+
+                  fruits[fruits.length]  <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Blueberry&quot;</span>;
+                  <span style="color: #888888">//sauf que je ne peux pas ajouter plusieurs éléments à la fois avec la notation de l&#39;index.</span>
+                  console.log(fruits);</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - push()
+            </div>
+            <div class="content">
+              <p>
+                J'ai une liste de noms. Je veux créer une nouvelle liste avec les noms de la première liste qui commencent par la lettre "a". 
+                Utilisez les méthodes <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith">startsWith()</a> ou l'index d'une chaîne de caractères et la méthode push() du tableau.
+              </p>
+              <iframe
+              frameborder="0"
+              height="85%"  
+              src="https://onecompiler.com/embed/javascript/3ymrp2jvv"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - pop()
+            </div>
+            <div class="content">
+              <p>
+                La méthode pop() supprime (pop) le dernier élément d'un tableau.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> fruits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="background-color: #fff0f0">&quot;Orange&quot;</span>, <span style="background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="background-color: #fff0f0">&quot;Mango&quot;</span>];
+                  fruits.pop(); 
+                  console.log(fruits); <span style="color: #888888">//[ &#39;Banana&#39;, &#39;Orange&#39;, &#39;Apple&#39; ]</span>
+                  fruits.pop();
+                  console.log(fruits); <span style="color: #888888">//[ &#39;Banana&#39;, &#39;Orange&#39; ]</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - pop()
+            </div>
+            <div class="content">
+              <p>
+                Souvent, vous verrez que pop() est utilisé lorsqu'il existe une liste d'actions qui doivent être traitées et retirées de la liste lorsqu'elles sont effectuées.
+                L'exemple suivant est une démonstration naïve de ce concept.
+              </p>
+              <iframe
+              frameborder="0"
+              height="85%"  
+              src="https://onecompiler.com/embed/javascript/3ymrs34sh"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - shift()
+            </div>
+            <div class="content">
+              <p>
+                La méthode shift() supprime le premier élément d'un tableau. C'est donc comme le pop(), mais il commence au début du tableau.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> fruits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="background-color: #fff0f0">&quot;Orange&quot;</span>, <span style="background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="background-color: #fff0f0">&quot;Mango&quot;</span>];
+                  fruits.shift(); 
+                  console.log(fruits) <span style="color: #888888">//[ &#39;Orange&#39;, &#39;Apple&#39;, &#39;Mango&#39; ]</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - shift()
+            </div>
+            <div class="content">
+              <p>
+                Ainsi, puisque shift() est très similaire à pop() dans la mesure où shift() commence à supprimer un élément d'un tableau au début, 
+                nous pouvons maintenant écrire notre exemple de liste de tâches que j'ai montré plus tôt avec pop() en utilisant shift().
+              </p>
+              <iframe
+              frameborder="0"
+              height="85%"  
+              src="https://onecompiler.com/embed/javascript/3ymrssme7"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - unshift()
+            </div>
+            <div class="content">
+              <p>
+                La méthode unshift() ajoute de nouveaux éléments au début d'un tableau.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> fruits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="background-color: #fff0f0">&quot;Orange&quot;</span>, <span style="background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="background-color: #fff0f0">&quot;Mango&quot;</span>];
+                  fruits.unshift(<span style="background-color: #fff0f0">&quot;Lemon&quot;</span>,<span style="background-color: #fff0f0">&quot;Pineapple&quot;</span>);
+                  console.log(fruits) <span style="color: #888888">//[ &#39;Lemon&#39;, &#39;Pineapple&#39;, &#39;Banana&#39;, &#39;Orange&#39;, &#39;Apple&#39;, &#39;Mango&#39; ]</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Event Queue comme exemple - FIFO (First in first out)
+            </div>
+            <div class="content">
+              <p>
+                Chaque fois que l'utilisateur interagit avec votre programme - clique sur un bouton, déroule un menu ou appuie sur une touche - 
+                le système d'exploitation génère un événement.
+              </p>
+              <img src="image/eventqueue.svg" style="width:85%">
+            </div>
+          </div>
+
+          <!--slide 44-->
+          <div class="slide">
+            <div class="heading">
+              Event Queue autre exemple - FIFO (First in first out)
+            </div>
+            <div class="content">
+              <iframe id="queue" src="queue.html" width="100%" height="100%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Event Queue comme exemple - FIFO (First in first out)
+            </div>
+            <div class="content">
               <iframe
               frameborder="0"
               height="95%"  
-              src="https://onecompiler.com/embed/javascript/3yg3me5pe"
+              src="https://onecompiler.com/embed/javascript/3ymumck33"
               width="100%"
-            ></iframe>
-            <img src="image/warning.svg" class="html-css-logo" style="left: 70%; top:63%; height:32%">
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - sort()
+            </div>
+            <div class="content">
+              <p>
+                La fonction sort() trie les éléments d'un tableau.
+              </p>
+              <iframe id="sort" src="sort.html" width="100%" height="95%"  frameborder="0"></iframe>
+            </div>
+          </div>
+   
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - sort()
+            </div>
+            <div class="content">
+              <p>
+                La fonction sort() trie les éléments d'un tableau.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> fruits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="background-color: #fff0f0">&quot;Orange&quot;</span>, <span style="background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="background-color: #fff0f0">&quot;Mango&quot;</span>];
+                  fruits.sort();
+                  console.log(fruits); <span style="color: #888888">//[ &#39;Apple&#39;, &#39;Banana&#39;, &#39;Mango&#39;, &#39;Orange&#39; ]</span></pre>
+              </div>
+              <br>
+              <p>Dans l'exemple ci-dessus, le tableau est trié par ordre alphabétique.</p>
+              <p>Nous disposons toutefois d'un moyen plus puissant de trier. Nous pouvons définir nous-mêmes la condition par laquelle elle est triée. 
+                Nous y regarderons de plus près une fois que je vous aurai montré comment fonctionnent les callbacks.</p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - reverse()
+            </div>
+            <div class="content">
+              <p>
+                La méthode reverse() inverse l'ordre des éléments d'un tableau.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> fruits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="background-color: #fff0f0">&quot;Orange&quot;</span>, <span style="background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="background-color: #fff0f0">&quot;Mango&quot;</span>];
+                  fruits.reverse();
+                  console.log(fruits) <span style="color: #888888">//[ &#39;Mango&#39;, &#39;Apple&#39;, &#39;Orange&#39;, &#39;Banana&#39; ]</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - reverse()
+            </div>
+            <div class="content">
+              <p>
+                En connaissant sort() et reverse(), pouvez-vous maintenant trier une liste de mots de Z à A ?
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3ymv4tbrx"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - includes()
+            </div>
+            <div class="content">
+              <p>
+                La méthode includes() renvoie un résultat positif si un tableau contient une valeur spécifiée. 
+                Elle renvoie false si la valeur n'est pas trouvée. 
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> fruits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="background-color: #fff0f0">&quot;Orange&quot;</span>, <span style="background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="background-color: #fff0f0">&quot;Mango&quot;</span>];
+                  <span style="color: #008800; font-weight: bold">const</span> result <span style="color: #333333">=</span> fruits.includes(<span style="background-color: #fff0f0">&quot;Mango&quot;</span>);
+                  console.log(result); <span style="color: #888888">//true</span>
+                  </pre>
+              </div>
+              <br>
+              <p>Commencez la recherche à la position 3 :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> fruits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="background-color: #fff0f0">&quot;Orange&quot;</span>, <span style="background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="background-color: #fff0f0">&quot;Mango&quot;</span>];
+                  fruits.includes(<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="color: #0000DD; font-weight: bold">3</span>);</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - includes()
+            </div>
+            <div class="content">
+              <p>
+                Quelqu'un a écrit une fonction contains qui vérifie si un élément est dans un tableau. 
+                Peut-on modifier le code en utilisant la fonction intégrée includes() ?
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3ymxkv8v4"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - concat()
+            </div>
+            <div class="content">
+              <p>
+                La méthode concat() concatène (joint) deux tableaux ou plus. Elle renvoie un nouveau tableau, 
+                contenant les tableaux joints et ne modifie pas les tableaux existants.
+              </p>
+              <p>Exemple:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                <span style="color: #008800; font-weight: bold">const</span> arr1 <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Cecilie&quot;</span>, <span style="background-color: #fff0f0">&quot;Lone&quot;</span>];
+                <span style="color: #008800; font-weight: bold">const</span> arr2 <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Emil&quot;</span>, <span style="background-color: #fff0f0">&quot;Tobias&quot;</span>, <span style="background-color: #fff0f0">&quot;Linus&quot;</span>];
+                <span style="color: #008800; font-weight: bold">const</span> children <span style="color: #333333">=</span> arr1.concat(arr2);
+                console.log(children) <span style="color: #888888">//[ &#39;Cecilie&#39;, &#39;Lone&#39;, &#39;Emil&#39;, &#39;Tobias&#39;, &#39;Linus&#39; ]</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Array revisités - function
+            </div>
+            <div class="content">
+              <p>
+                Il existe de nombreuses autres méthodes/functions disponibles sur des Arrays. 
+                Je ne les expliquerai pas toutes, parce que beaucoup de méthodes sont très spécialisées et que vous ne les utiliserez pas très souvent.
+              </p>
+              <p>Voici un lien qui présente une liste de toutes ces fonctions et les explique en détail.</p>
+              <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array#m%C3%A9thodes_des_instances">Javascript - Array</a>
+            </div>
+          </div>
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Date
+            </div>
+            <div class="content">
+              <p>
+                Les objets date sont créés avec new Date().
+              </p>
+              <p>Il existe quatre façons d'instancier (créer) une date :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">let</span> date <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>();
+                  console.log(date); <span style="color: #888888">//2022-11-04T09:02:15.409Z</span></pre
+              ></div>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  date <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>(<span style="color: #0000DD; font-weight: bold">100000000000</span>); <span style="color: #888888">//milliseconds</span>
+                  console.log(date); <span style="color: #888888">//1973-03-03T09:46:40.000Z</span></pre>
+              </div>
+              <p>Tout comme nous avons commencé à compter les années après la mort de Jésus, 
+                nous avons commencé à compter les millisecondes après le 1er janvier 1970 00:00:00 UTC.
+              </p>
+              <p>L'époque actuelle du 1er janvier 1970 00:00:00 UTC a été choisie arbitrairement par les ingénieurs d'Unix 
+                parce qu'elle était considérée comme une date pratique pour travailler.</p>
+              <img src="image/jesus.svg" class="html-css-logo" style="left: 65%; top:75%">
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Date
+            </div>
+            <div class="content">
+              <p>
+                Les objets date sont créés avec new Date().
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> date <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>(<span style="background-color: #fff0f0">&quot;2015-03-25&quot;</span>);
+                  console.log(date); <span style="color: #888888">//2015-03-25T00:00:00.000Z</span>
+                  </pre>
+              </div>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #888888">//new Date(année, mois, jour, heures, minutes, secondes, millisecondes);</span>
+                  <span style="color: #008800; font-weight: bold">const</span> date <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Date</span>(<span style="color: #0000DD; font-weight: bold">2018</span>, <span style="color: #0000DD; font-weight: bold">11</span>, <span style="color: #0000DD; font-weight: bold">24</span>, <span style="color: #0000DD; font-weight: bold">10</span>, <span style="color: #0000DD; font-weight: bold">33</span>, <span style="color: #0000DD; font-weight: bold">30</span>, <span style="color: #0000DD; font-weight: bold">0</span>);
+                  console.log(date); <span style="color: #888888">//2018-12-24T10:33:30.000Z</span></pre>
+              </div>
+              <br>
+              <p>Le mois de la classe Date est basé sur un zéro. Le mois de janvier est égal à 0. 
+                Donc, si vous transmettez un mois égal à 1, vous dites à la date qu'elle est le mois de février.</p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback
+            </div>
+            <div class="content">
+              <p>
+                Un callback est une fonction passée comme argument à une autre fonction.
+                Cette technique permet à une fonction d'appeler une autre fonction
+              </p>
+              <iframe id="phone" src="phone.html" width="75%" height="100%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback
+            </div>
+            <div class="content">
+              <p>
+                Un callback est une fonction passée comme argument à une autre fonction.
+              </p>
+              <p>Exemple:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">function</span> displayer(value) {
+                    console.log(value)
+                  }
+
+                  <span style="color: #008800; font-weight: bold">function</span> calculator(num1, num2, callbackFunc) {
+                    <span style="color: #008800; font-weight: bold">let</span> sum <span style="color: #333333">=</span> num1 <span style="color: #333333">+</span> num2;
+                    callbackFunc(sum);
+                  }
+
+                  calculator(<span style="color: #0000DD; font-weight: bold">5</span>, <span style="color: #0000DD; font-weight: bold">5</span>, displayer);</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - Array.forEach()
+            </div>
+            <div class="content">
+              <p>
+                Rappelez-vous la fonction forEach() que j'ai brièvement présentée et jamais vraiment expliquée. C'est le moment !
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> numbers <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">45</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">9</span>, <span style="color: #0000DD; font-weight: bold">16</span>, <span style="color: #0000DD; font-weight: bold">25</span>];
+                  numbers.forEach(display);
+
+                  <span style="color: #008800; font-weight: bold">function</span> display(value, index, array) {
+                    console.log(<span style="background-color: #fff0f0">&quot;Value: &quot;</span> <span style="color: #333333">+</span> value <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, index: &quot;</span> <span style="color: #333333">+</span> index)
+                  }</pre>
+              </div>
+              <br>
+              <p>Comme nous n'avons pas implémenté la méthode forEach(), 
+                nous pouvons jeter un coup d'œil rapide dans la documentation <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach#description">mdn</a> et voir comment elle se comporte.</p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - Array.forEach()
+            </div>
+            <div class="content">
+              <p>Notez que la fonction avant prend 3 arguments :</p>
+              <ul>
+                <li>La valeur de l'élément</li>
+                <li>L'index de l'élément</li>
+                <li>Le tableau lui-même</li>
+              </ul>
+              <br>
+              <p>
+                Dans la méthode Array.forEach(), nous ne pouvons fournir qu'un seul argument.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> numbers <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">45</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">9</span>, <span style="color: #0000DD; font-weight: bold">16</span>, <span style="color: #0000DD; font-weight: bold">25</span>];
+                  numbers.forEach(display);
+
+                  <span style="color: #008800; font-weight: bold">function</span> display(value) {
+                    console.log(<span style="background-color: #fff0f0">&quot;Value: &quot;</span> <span style="color: #333333">+</span> value )
+                  }</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - Array.sort()
+            </div>
+            <div class="content">
+              <p>
+                Je vous ai montré une interface utilisateur de tri fantaisiste et j'ai expliqué que nous pouvions y parvenir avec la méthode sort(). 
+                Bien que ce soit vrai, ce n'était que la moitié de la vérité.</p>
+              <iframe id="sort2" src="sort.html" width="100%" height="95%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - Array.sort()
+            </div>
+            <div class="content">
+              <p>
+                Un petit rappel : La méthode sort() trie un tableau par ordre alphabétique.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> fruits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="background-color: #fff0f0">&quot;Orange&quot;</span>, <span style="background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="background-color: #fff0f0">&quot;Mango&quot;</span>];
+                  fruits.sort();
+                  console.log(fruits) <span style="color: #888888">//[ &#39;Apple&#39;, &#39;Banana&#39;, &#39;Mango&#39;, &#39;Orange&#39; ]</span>
+                </pre>
+              </div>
+              <br>
+              <p>Par défaut, la fonction sort() trie les valeurs sous forme de chaînes de caractères.
+                Si les nombres sont triés comme des chaînes de caractères, "25" est plus grand que "100", car "2" est plus grand que "1".</p>
+
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> numbers <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">25</span>, <span style="color: #0000DD; font-weight: bold">100</span>, <span style="color: #0000DD; font-weight: bold">40</span>, <span style="color: #0000DD; font-weight: bold">3</span>];
+                  numbers.sort();
+                  console.log(numbers) <span style="color: #888888">//[ 100, 25, 3, 40 ] ?</span></pre>
+              </div>
+            </div>
+          </div>
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - Array.sort()
+            </div>
+            <div class="content">
+              <p>
+                Belle fonction, Kilian! sort() ne peut même pas trier les chiffres ! Mais attendez, lisons la <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#description">documentation</a>
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> numbers <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">40</span>, <span style="color: #0000DD; font-weight: bold">100</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">5</span>, <span style="color: #0000DD; font-weight: bold">25</span>, <span style="color: #0000DD; font-weight: bold">10</span>];
+                  numbers.sort(compare);
+
+                  <span style="color: #008800; font-weight: bold">function</span> compare(a,b){
+                      <span style="color: #008800; font-weight: bold">return</span> a - b
+                  }
+
+                  console.log(numbers); <span style="color: #888888">//[ 1, 5, 10, 25, 40, 100 ]</span></pre>
+              </div>
+              <p>
+                Nous devons simplement indiquer à la fonction sort() comment elle doit trier. La façon de faire est de fournir une fonction qui compare deux valeurs
+              </p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - Array.sort()
+            </div>
+            <div class="content">
+              <p>
+                Mais pourquoi ça marche ?
+              </p>
+              <p>Voici un algorithme de tri écrit à la main. Remarquez-vous des similitudes avec l'exemple précédent ?</p>
+              <div style="overflow-y: scroll; height:85%">
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">const</span> numbers <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">40</span>, <span style="color: #0000DD; font-weight: bold">100</span>, <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">5</span>, <span style="color: #0000DD; font-weight: bold">25</span>, <span style="color: #0000DD; font-weight: bold">10</span>];
+  
+                    <span style="color: #008800; font-weight: bold">function</span> compare(a,b){
+                      <span style="color: #008800; font-weight: bold">return</span> a <span style="color: #333333">&gt;</span> b
+                    }
+  
+                    <span style="color: #008800; font-weight: bold">function</span> sortArray(array, callback) {
+                      <span style="color: #008800; font-weight: bold">var</span> temp <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+                      <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #008800; font-weight: bold">var</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> array.length; i<span style="color: #333333">++</span>) {
+                        <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #008800; font-weight: bold">var</span> j <span style="color: #333333">=</span> i; j <span style="color: #333333">&lt;</span> array.length; j<span style="color: #333333">++</span>) {
+                          <span style="color: #008800; font-weight: bold">if</span> (callback(array[i],array[j])) {
+                            temp <span style="color: #333333">=</span> array[j];
+                            array[j] <span style="color: #333333">=</span> array[i];
+                            array[i] <span style="color: #333333">=</span> temp;
+                          }
+                        }
+                      }
+                      <span style="color: #008800; font-weight: bold">return</span> array;
+                    }
+  
+                    console.log(sortArray(numbers, compare))</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - Array.sort()
+            </div>
+            <div class="content">
+              <p>
+                Si je veux trier par ordre alphabétique de Z à A, il suffit d'écrire une fonction de comparaison qui compare les chaînes de caractères.
+                Pour cela, j'utilise la fonction intégrée <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare">localeCompare()</a>.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> fruits <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Banana&quot;</span>, <span style="background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="background-color: #fff0f0">&quot;Ananas&quot;</span>, <span style="background-color: #fff0f0">&quot;Blueberry&quot;</span>, <span style="background-color: #fff0f0">&quot;Mango&quot;</span>];
+
+                  <span style="color: #008800; font-weight: bold">function</span> compare(a,b){
+                    <span style="color: #008800; font-weight: bold">return</span> b.localeCompare(a);
+                  }
+                  fruits.sort(compare)
+                  console.log(fruits)</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - Array.sort()
+            </div>
+            <div class="content">
+              <p>
+                J'ai maintenant un tableau d'objets personnes. Je veux pouvoir trier par prénom, nom et âge. 
+                Pouvez-vous implémenter les fonctions de comparaison et appeler la méthode sort() avec chacune d'entre elles ?
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3yn47qb8u"
+              width="100%"
+              ></iframe>
             </div>
           </div>
           
-
           <!--slide 46-->
           <div class="slide">
             <div class="heading">
-              Class
+              Callback - Array.filter()
             </div>
             <div class="content">
-              <p class="sub-title">
-                Le système de prototypes de JavaScript peut être interprété comme une version quelque peu informelle 
-                d'un concept orienté objet appelé classes. 
-                Une classe définit la forme d'un type d'objet - quelles méthodes et propriétés il possède.
-                Un tel objet est appelé une instance de la classe.
+              <p>
+                La méthode filter() crée un nouveau tableau rempli d'éléments qui passent un test fourni par une fonction.
               </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> ages <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">32</span>, <span style="color: #0000DD; font-weight: bold">33</span>, <span style="color: #0000DD; font-weight: bold">16</span>, <span style="color: #0000DD; font-weight: bold">40</span>];
+                  <span style="color: #008800; font-weight: bold">const</span> result <span style="color: #333333">=</span> ages.filter(checkAdult);
+
+                  <span style="color: #008800; font-weight: bold">function</span> checkAdult(age) {
+                    <span style="color: #008800; font-weight: bold">return</span> age <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">18</span>;
+                  }
+
+                  console.log(result);</pre>
+              </div>
+              <p>Encore une fois, jetons un coup d'œil à la <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">documentation</a>.</p>
             </div>
           </div>
 
-              
           <!--slide 46-->
           <div class="slide">
             <div class="heading">
-              Pour ceux qui sont en avance
+              Callback - Array.filter()
             </div>
             <div class="content">
-              <p class="sub-title">
-                <a href="https://github.com/euZebe/clean-code-javascript-fr">https://github.com/euZebe/clean-code-javascript-fr</a>
+              <p>
+                Jetons un coup d'œil à une fonction d'exemple écrite à la main qui fait la même chose. Pouvez-vous trouver les similarités ?
               </p>
+              <div style="overflow-y: scroll; height:85%">
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">const</span> ages <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">32</span>, <span style="color: #0000DD; font-weight: bold">33</span>, <span style="color: #0000DD; font-weight: bold">16</span>, <span style="color: #0000DD; font-weight: bold">40</span>];
+  
+                    <span style="color: #008800; font-weight: bold">function</span> checkAdult(age, index, array) {
+                      <span style="color: #008800; font-weight: bold">return</span> age <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">18</span>;
+                    }
+  
+                    <span style="color: #008800; font-weight: bold">function</span> filter(array, callback){
+                      <span style="color: #008800; font-weight: bold">let</span> storage <span style="color: #333333">=</span> [array[<span style="color: #0000DD; font-weight: bold">0</span>]];
+                      <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #008800; font-weight: bold">let</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>; i <span style="color: #333333">&lt;</span> array.length; i<span style="color: #333333">++</span>){
+                        <span style="color: #008800; font-weight: bold">if</span>(callback(array[i])){
+                          storage.push(array[i]);
+                        }
+                      }
+                      <span style="color: #008800; font-weight: bold">return</span> storage;
+                    }    
+                    console.log(filter(ages, checkAdult));</pre>
+                </div>
+              </div>
             </div>
-          </div>      
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - Array.filter()
+            </div>
+            <div class="content">
+              <p>
+                Encore une fois, j'ai mon tableau de personnes et je veux filtrer toutes les personnes qui ont moins de 30 ans. Pouvez-vous implémenter la callback fonction ?
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/javascript/3yn5yq9bd"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - setInterval()
+            </div>
+            <div class="content">
+              <p>
+                La méthode setInterval() appelle une fonction à des intervalles précis (en millisecondes). Comme vous pouvez le deviner, nous avons également besoin d'un callback pour setInterval()
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  setInterval(display, <span style="color: #0000DD; font-weight: bold">1000</span>);
+
+                  <span style="color: #008800; font-weight: bold">function</span> display(){
+                    console.log(<span style="background-color: #fff0f0">&quot;Hello&quot;</span>);
+                  }</pre>
+              </div>
+              <br>
+              <p style="color:red"> setInterval() est l'ancienne façon de faire des animations en javascript, vous trouverez donc beaucoup d'exemples qui l'utilisent. 
+                Pour l'amour de Dieu, si vous voulez faire des animations en javascript plus tard, utilisez requestAnimationFrame() et non setInterval().</p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - setInterval() vs requestAnimationFrame()
+            </div>
+            <div class="content">
+              <p>
+                Nous allons échanger requestAnimationFrame avec setInteveral() sur l'animation suivante et vous devriez voir ce que je veux dire.
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://codepen.io/VincentGarreau/embed/bGxvQd"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Callback - setTimeout()
+            </div>
+            <div class="content">
+              <p>
+                La méthode setTimeout() appelle une fonction après un certain nombre de millisecondes.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  console.log(<span style="background-color: #fff0f0">&quot;début du programme&quot;</span>)
+                  setTimeout(display, <span style="color: #0000DD; font-weight: bold">2000</span>) <span style="color: #888888">//délai de deux secondes</span>
+
+                  <span style="color: #008800; font-weight: bold">function</span> display(){
+                      console.log(<span style="background-color: #fff0f0">&quot;Hello&quot;</span>);
+                  }</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              JSON.stringify()
+            </div>
+            <div class="content">
+              <p>Tout objet JavaScript peut être stringifié (converti en chaîne de caractères) à l'aide de la fonction JavaScript JSON.stringify().
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/javascript/3ykwr6cee"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - getElementById()
+            </div>
+            <div class="content">
+              <p>L'exemple suivant modifie le contenu (le innerHTML) de l'élément &lt;p&gt; avec id="demo" :
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://codepen.io/Kallocain/embed/zYaKdWx"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - getElementsByTagName()
+            </div>
+            <div class="content">
+              <p>Cet exemple trouve tous les éléments &lt;p&gt;:
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://codepen.io/Kallocain/embed/GRGjQzL"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - getElementsByClassName()
+            </div>
+            <div class="content">
+              <p>Si vous voulez trouver tous les éléments HTML ayant le même nom de classe, utilisez getElementsByClassName().
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://codepen.io/Kallocain/embed/abKmqrq"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - querySelectorAll()
+            </div>
+            <div class="content">
+              <p>Si vous voulez trouver tous les éléments HTML qui correspondent à un sélecteur CSS spécifié 
+                (id, noms de classe, types, attributs, valeurs des attributs, etc.), utilisez la méthode querySelectorAll().
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://codepen.io/Kallocain/embed/qBKaoBy"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
 
           <div class="slide">
             <div class="heading">
@@ -3048,7 +4658,7 @@
         </section>
 
         <section class="counter">
-          <input type="number" id="index" name="index" min="1" max="129" value="1" style="width:40%"> of 129
+          <input type="number" id="index" name="index" min="1" max="203" value="1" style="width:40%"> of 203
         </section>
 
         <section class="navigation">
